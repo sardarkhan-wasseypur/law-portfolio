@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#0b1220", "on-tertiary": "#402d00", "surface-bright": "#343943", "inverse-primary": "#585e6f", "primary": "#c0c6da", "on-secondary-fixed": "#3f0018", "surface-container-lowest": "#090e17", "secondary-container": "#832644", "primary-fixed-dim": "#c0c6da", "surface-container-high": "#252a34", "inverse-on-surface": "#2c313a", "on-primary-fixed": "#151b2a", "on-primary-container": "#777d8f", "surface-container-low": "#171c25", "on-primary-fixed-variant": "#404757", "outline-variant": "#45474c", "on-tertiary-fixed-variant": "#5a4309", "on-error": "#690005", "tertiary-fixed": "#ffdf9f", "on-secondary-container": "#ff9bb3", "background": "#0e141c", "surface-container-highest": "#30353f", "tertiary-fixed-dim": "#e4c27d", "error": "#ffb4ab", "on-tertiary-fixed": "#261a00", "surface": "#0e141c", "outline": "#909096", "surface-dim": "#0e141c", "tertiary": "#e4c27d", "on-secondary": "#620a2c", "on-secondary-fixed-variant": "#802442", "on-error-container": "#ffdad6", "error-container": "#93000a", "on-surface": "#dee2ef", "on-tertiary-container": "#967a3c", "secondary-fixed-dim": "#ffb1c2", "surface-container": "#1b2029", "secondary-fixed": "#ffd9df", "primary-fixed": "#dce2f6", "tertiary-container": "#1a1100", "on-primary": "#2a3040", "on-surface-variant": "#c6c6cc", "on-background": "#dee2ef", "secondary": "#ffb1c2", "surface-variant": "#30353f", "inverse-surface": "#dee2ef", "surface-tint": "#c0c6da" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-2xl": "4rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-3xl": "6rem" }, "fontFamily": { "headline-xl": [ "Bodoni Moda" ], "body-md": [ "Hanken Grotesk" ], "subheading-serif": [ "Bodoni Moda" ], "legal-disclaimer": [ "Hanken Grotesk" ], "display-lg-mobile": [ "Bodoni Moda" ], "label-md": [ "Hanken Grotesk" ], "display-lg": [ "Bodoni Moda" ], "body-sm": [ "Hanken Grotesk" ], "eyebrow": [ "Hanken Grotesk" ], "headline-xl-mobile": [ "Bodoni Moda" ], "body-lg": [ "Hanken Grotesk" ], "headline-md": [ "Bodoni Moda" ] }, "fontSize": { "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "subheading-serif": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "legal-disclaimer": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "eyebrow": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container/95 backdrop-blur-md shadow-[0_8px_32px_rgba(5,8,14,0.65)]"><div class="bg-surface-container-lowest border-b border-outline-variant/30"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin h-10 flex items-center justify-between text-legal-disclaimer font-legal-disclaimer text-on-surface-variant"><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs text-tertiary"><span class="material-symbols-outlined text-[14px]">gavel</span><span class="uppercase tracking-wider font-semibold">Bar Council of Delhi &amp; Supreme Court Bar Association</span></span><span class="hidden md:inline text-outline-variant">|</span><span class="hidden md:inline tracking-wider">Chambers: Block II, Lawyers Chambers, High Court of Delhi</span></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-on-surface hover:text-tertiary transition-colors" href="tel:+911123388900"><span class="material-symbols-outlined text-[14px] text-tertiary">call</span><span class="tracking-wide">+91 (011) 2338-8900</span></a><span class="hidden sm:inline text-outline-variant">|</span><span class="hidden sm:inline tracking-wider text-secondary">Urgent Registry: +91 98100 00000</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-md group" data-path="home" href="#"><div class="w-10 h-10 rounded-DEFAULT bg-surface-container-high border border-tertiary/40 flex items-center justify-center text-tertiary shadow-inner group-hover:border-tertiary transition-colors"><span class="material-symbols-outlined text-subheading-serif font-subheading-serif">balance</span></div><div class="flex flex-col"><span class="font-headline-md text-subheading-serif text-on-surface tracking-[0.15em] font-semibold leading-none">SHUBHAM SINGH</span><span class="font-eyebrow text-[10px] tracking-[0.2em] text-tertiary uppercase mt-1">Advocate • Supreme Court of India</span></div></a><nav class="hidden xl:flex items-center gap-space-lg h-full" data-active-classes="text-tertiary border-b-2 border-tertiary"><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-[0.08em] transition-colors py-space-sm" data-path="home" href="#">Home</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-[0.08em] transition-colors py-space-sm" data-path="about-chambers" href="#">About / Chambers</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-[0.08em] transition-colors py-space-sm" data-path="practice-areas" href="#">Practice Areas</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-[0.08em] transition-colors py-space-sm" data-path="courts-jurisdictions" href="#">Courts</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-[0.08em] transition-colors py-space-sm" data-path="legal-insights" href="#">Legal Insights</a><a aria-current="page" class="font-label-md uppercase tracking-[0.08em] transition-colors py-space-sm text-tertiary border-b-2 border-tertiary" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-lg py-space-sm bg-secondary-container hover:bg-on-secondary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider rounded-DEFAULT transition-colors border border-secondary/20 shadow-md" data-path="consultation-registry" href="#">Book Consultation</a><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-tertiary/40" src="https://lh3.googleusercontent.com/aida/AEtjO1UgYIcdXZaxZ9TZqaXEfPBGygt8wp_ZMHUuEUS83NxoAku_zeRe4hHpLdNF2tblC6usOevc3twSzZY2mfmTJltNvdUL1HSNdmGOEU-aKehXm8wZX98TezNZQ1plydKeoD9quIKdiNv_Bnnn-fAx0uol8lfh0OS_8ORLqn3WW-3ryn3Er6BzwlpdWywKUIWd4nIaXoRmlBFUEop1vHMa1YNkManhRIR7WoZ0fWEbtBemkcIqjittHBRrawQ"/><button aria-label="Toggle Mobile Menu" class="xl:hidden p-space-xs text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></div></header><main class="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]"><div class="flex flex-col w-full">
+<!-- Page Header -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile lg:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col items-start gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container border border-tertiary/30 rounded-DEFAULT">
+<span class="material-symbols-outlined text-tertiary text-body-sm">gavel</span>
+<span class="font-eyebrow text-eyebrow text-tertiary uppercase tracking-widest">Chambers Registry &amp; Confidential Intake</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+        Contact &amp; Chambers
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+        For confidential chamber briefings, urgent Delhi High Court listing mentions, and appellate dispute advisory before the Supreme Court of India.
+      </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-body-sm text-tertiary-fixed-dim">
+<span class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Direct Registry Gateway Active
+        </span>
+<span class="text-outline-variant">•</span>
+<span>Delhi High Court Sher Shah Road &amp; Defence Colony Chambers</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary font-label-md">Urgent Listing Helpline Monitored 24/7</span>
+</div>
+</div>
+</section>
+<!-- Main Grid Split (45% Logistics & Directions / 55% Intake Form) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-start">
+<!-- Left Column: Chambers Logistics, Directions & Coordinates (5 of 12 cols = ~42-45%) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Card 1: Official Chamber Coordinates -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">account_balance</span>
+<h2 class="font-headline-md text-subheading-serif text-on-surface">Chamber Coordinates</h2>
+</div>
+<span class="font-legal-disclaimer text-legal-disclaimer text-tertiary uppercase tracking-wider bg-surface-container-high px-space-xs py-0.5 rounded-DEFAULT">Official Registry</span>
+</div>
+<div class="flex flex-col gap-space-md text-body-md text-on-surface-variant">
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-1">
+<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md uppercase">
+<span class="material-symbols-outlined text-body-sm">gavel</span>
+<span>Principal Judicial Chamber</span>
+</div>
+<p class="font-headline-md text-subheading-serif text-on-surface text-base">Chamber No. 412, Lawyers Chambers Block II</p>
+<p class="text-body-sm text-on-surface-variant leading-relaxed">High Court of Delhi, Sher Shah Road, New Delhi – 110503</p>
+<span class="inline-block text-legal-disclaimer text-tertiary-fixed-dim uppercase pt-1">Adjacent to Gate No. 2 Registry Passage</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT space-y-1">
+<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md uppercase">
+<span class="material-symbols-outlined text-body-sm">night_shelter</span>
+<span>Evening Conference Chambers</span>
+</div>
+<p class="font-headline-md text-subheading-serif text-on-surface text-base">C-Block, Defence Colony</p>
+<p class="text-body-sm text-on-surface-variant leading-relaxed">New Delhi – 110024</p>
+<span class="inline-block text-legal-disclaimer text-on-surface-variant uppercase pt-1">Senior Counsel Briefings &amp; Corporate Advisory</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Operating Hours & Session Roster -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">schedule</span>
+<h2 class="font-headline-md text-subheading-serif text-on-surface">Operating Hours &amp; Roster</h2>
+</div>
+<div class="space-y-space-sm text-body-sm">
+<div class="flex items-start justify-between p-space-sm bg-surface-container-low rounded-DEFAULT">
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-on-surface block">Delhi High Court Sessions</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Sher Shah Road Chamber 412</span>
+</div>
+<span class="font-body-md text-body-sm text-tertiary text-right font-medium">09:30 AM – 06:30 PM<br/><span class="text-legal-disclaimer text-on-surface-variant">Mon – Fri</span></span>
+</div>
+<div class="flex items-start justify-between p-space-sm bg-surface-container-low rounded-DEFAULT">
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-on-surface block">Evening Conference Desk</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Defence Colony (Prior Booking)</span>
+</div>
+<span class="font-body-md text-body-sm text-tertiary text-right font-medium">07:00 PM – 09:30 PM<br/><span class="text-legal-disclaimer text-on-surface-variant">Mon – Sat</span></span>
+</div>
+<div class="p-space-sm bg-secondary-container/20 rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-body-md">emergency</span>
+<span class="font-label-md text-label-md uppercase">Urgent Vacation / Remand Desk</span>
+</div>
+<span class="font-headline-md text-subheading-serif text-secondary text-sm">24/7 Helpline</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Direct Telecommunications -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">perm_phone_msg</span>
+<h2 class="font-headline-md text-subheading-serif text-on-surface">Direct Lines &amp; Dispatch</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm text-body-sm">
+<a class="p-space-sm bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-DEFAULT flex flex-col gap-1" href="tel:+911123388900">
+<span class="text-legal-disclaimer text-tertiary uppercase font-semibold">Court Desk Line</span>
+<span class="font-body-md text-on-surface font-medium">+91 (011) 2338-8900</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Chamber Intercom Ext. 412</span>
+</a>
+<a class="p-space-sm bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-DEFAULT flex flex-col gap-1" href="tel:+919810088921">
+<span class="text-legal-disclaimer text-secondary uppercase font-semibold">Urgent Mention Desk</span>
+<span class="font-body-md text-on-surface font-medium">+91 98100 88921</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Emergency Stay &amp; Listing</span>
+</a>
+<a class="p-space-sm bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-DEFAULT flex flex-col gap-1" href="mailto:registry@shubhamsingh.adv.in">
+<span class="text-legal-disclaimer text-tertiary uppercase font-semibold">Official Court Registry</span>
+<span class="font-body-md text-on-surface font-medium truncate">registry@shubhamsingh.adv.in</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Pleadings &amp; Service Copies</span>
+</a>
+<a class="p-space-sm bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-DEFAULT flex flex-col gap-1" href="mailto:counsel@shubhamsingh.law">
+<span class="text-legal-disclaimer text-tertiary uppercase font-semibold">Senior Briefings</span>
+<span class="font-body-md text-on-surface font-medium truncate">counsel@shubhamsingh.law</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Direct Counsel Dispatch</span>
+</a>
+</div>
+<a class="p-space-sm bg-[#075e54]/20 hover:bg-[#075e54]/30 rounded-DEFAULT flex items-center justify-between text-on-surface transition-colors" href="https://wa.me/919810088921" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-emerald-400">chat</span>
+<div>
+<span class="font-label-md text-label-md block">WhatsApp Matter Dossier</span>
+<span class="text-legal-disclaimer text-on-surface-variant">+91 98100 88921 • Court Clerk Desk for Urgent Filing IDs</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- Card 4: Transit & Gate Security Protocol -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">commute</span>
+<h2 class="font-headline-md text-subheading-serif text-on-surface">Transit &amp; Security Protocol</h2>
+</div>
+<div class="space-y-space-sm text-body-sm text-on-surface-variant">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs text-center">
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface block">Supreme Court</span>
+<span class="text-legal-disclaimer text-tertiary block">Blue Line • 1.2 km</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Rec. for Gate 1 &amp; 2</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface block">Khan Market</span>
+<span class="text-legal-disclaimer text-tertiary block">Violet Line • 1.4 km</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Auto/Cab Stand</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface block">Central Sect.</span>
+<span class="text-legal-disclaimer text-tertiary block">Yellow/Violet • 1.8 km</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Interchange Hub</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT space-y-1">
+<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">local_parking</span>
+<span>Automated Multi-Level Parking Complex (MLPC)</span>
+</div>
+<p class="text-legal-disclaimer leading-relaxed text-on-surface-variant">
+                Available directly opposite Gate No. 2, Delhi High Court on Sher Shah Road. Offers dedicated automated litigant parking bays with pedestrian underpass leading safely inside the Court Complex security checkpoints.
+              </p>
+</div>
+</div>
+</div>
+<!-- Card 5: Interactive Map & Precinct Guide -->
+<div class="bg-surface-container p-space-lg rounded-DEFAULT shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">explore</span>
+<h2 class="font-headline-md text-subheading-serif text-on-surface">Precinct Map Guide</h2>
+</div>
+<span class="text-legal-disclaimer font-legal-disclaimer text-on-surface-variant">28.6139° N, 77.2401° E</span>
+</div>
+<div class="w-full h-52 bg-cover bg-center rounded-DEFAULT relative overflow-hidden flex flex-col justify-end p-space-md shadow-inner" data-location="Delhi High Court, Sher Shah Road, New Delhi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDv19IrHqOtbar1E39qz53HgjF6uXwyHk_GW0KxUnZkH714TY6EEqNxSa_SlXxZ_fqqRNkKdcWQiqPwBzbnz2gc6U5095pRlSNQ5byGF7wR3MmanRzuD23cjit2fLpONSZ65t3s3NNCVk_7MlGK6tG7yxB27ispRwqKh6HZyZZWGBQfc2Vh9D7XvkG6FyLwN1jUGj48ymNvWS4vGrdgK47himixGLNk5TYqogSMCkdOPesxZCCU4vpe')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex items-end justify-between">
+<div class="text-on-surface">
+<span class="font-headline-md text-subheading-serif text-sm block">Sher Shah Road Judicial Corridor</span>
+<span class="text-legal-disclaimer text-tertiary">Between Purana Qila &amp; India Gate C-Hexagon</span>
+</div>
+<a class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container-highest hover:bg-tertiary hover:text-on-tertiary text-on-surface text-label-md font-label-md rounded-DEFAULT transition-colors shadow" href="https://maps.google.com/?q=Delhi+High+Court+Sher+Shah+Road+New+Delhi" rel="noopener noreferrer" target="_blank">
+<span>Google Maps</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="flex items-center justify-between text-legal-disclaimer text-on-surface-variant pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">shield</span> Entry via Litigant E-Pass or Pass Counter Gate 2
+            </span>
+<span>Security Badge Mandatory</span>
+</div>
+</div>
+</div>
+<!-- Right Column: 5-Field Confidential Intake Form (7 of 12 cols = ~55-58%) -->
+<div class="lg:col-span-7 sticky top-[130px]">
+<div class="bg-surface-container-low p-space-lg lg:p-space-xl rounded-DEFAULT shadow-xl flex flex-col gap-space-lg">
+<!-- Emergency Notice Banner -->
+<div class="p-space-md bg-secondary-container/40 rounded-DEFAULT flex items-center justify-between gap-space-sm text-secondary">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]">notification_important</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md tracking-wider uppercase">Urgent Vacation &amp; Same-Day Court Mentions</span>
+<span class="text-legal-disclaimer text-on-surface-variant">Immediate listing before Hon'ble Chief Justice or Vacation Bench</span>
+</div>
+</div>
+<a class="px-space-sm py-1 bg-secondary text-on-secondary font-label-md text-label-md uppercase rounded-DEFAULT hover:opacity-90 transition-opacity whitespace-nowrap shadow-sm" href="tel:+911123388900">
+              Call Desk Now
+            </a>
+</div>
+<!-- Form Header -->
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs text-tertiary text-legal-disclaimer font-legal-disclaimer uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Encrypted Chamber Transmission</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+              Confidential Matter Intake &amp; Consultation Request
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Submissions are reviewed directly by Advocate Shubham Singh. Information is protected by statutory Advocate-Client privilege under Section 126 of the Indian Evidence Act, 1872.
+            </p>
+</div>
+<!-- The Intake Form -->
+<form class="space-y-space-md" id="intake-form" onsubmit="event.preventDefault(); document.getElementById('form-status').classList.remove('hidden'); this.reset();">
+<!-- Field 1: Full Name / Litigant Organization -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="litigant-name">
+<span>Full Name / Litigant Organization <span class="text-secondary">*</span></span>
+<span class="text-legal-disclaimer text-on-surface-variant font-normal">Litigant or Briefing Attorney</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container px-space-md py-space-sm text-body-md text-on-surface placeholder:text-outline/60 rounded-DEFAULT focus:outline-none focus:ring-1 focus:ring-tertiary transition-shadow" id="litigant-name" name="litigant-name" placeholder="e.g. Dr. Rajeshwar Mehra / Vardhman Logistics Pvt. Ltd." required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: Phone Number (WhatsApp Enabled) -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="contact-phone">
+<span>Phone Number (WhatsApp Enabled) <span class="text-secondary">*</span></span>
+<span class="text-legal-disclaimer text-on-surface-variant font-normal">Registry sends file receipt via SMS/WhatsApp</span>
+</label>
+<div class="flex gap-space-xs">
+<div class="relative w-36 flex-shrink-0">
+<select class="w-full bg-surface-container px-space-sm py-space-sm text-body-md text-on-surface rounded-DEFAULT focus:outline-none focus:ring-1 focus:ring-tertiary cursor-pointer transition-shadow" id="country-code" name="country-code">
+<option selected="" value="+91">🇮🇳 +91 (IN)</option>
+<option value="+1">🇺🇸 +1 (US)</option>
+<option value="+44">🇬🇧 +44 (UK)</option>
+<option value="+971">🇦🇪 +971 (UAE)</option>
+<option value="+65">🇸🇬 +65 (SG)</option>
+</select>
+</div>
+<input class="w-full bg-surface-container px-space-md py-space-sm text-body-md text-on-surface placeholder:text-outline/60 rounded-DEFAULT focus:outline-none focus:ring-1 focus:ring-tertiary transition-shadow" id="contact-phone" name="contact-phone" pattern="[0-9]{10}" placeholder="98100 XXXXX" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Matter Classification / Preferred Judicial Forum -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="matter-forum">
+<span>Matter Classification / Judicial Forum <span class="text-secondary">*</span></span>
+<span class="text-legal-disclaimer text-on-surface-variant font-normal">Bench Specialization</span>
+</label>
+<div class="relative">
+<select class="w-full bg-surface-container px-space-md py-space-sm text-body-md text-on-surface rounded-DEFAULT focus:outline-none focus:ring-1 focus:ring-tertiary cursor-pointer appearance-none pr-10 transition-shadow" id="matter-forum" name="matter-forum" required="">
+<option disabled="" selected="" value="">Select Forum &amp; Nature of Dispute</option>
+<option value="supreme-court-slp">Supreme Court of India — Special Leave Petition (SLP)</option>
+<option value="dhc-criminal-482">Delhi High Court — Criminal Appeal / Sec 482 Quashing</option>
+<option value="dhc-commercial-suit">Delhi High Court — Commercial Division &amp; Original Civil Suit</option>
+<option value="dhc-writ-petition">Delhi High Court — Writ Petition (Art. 226 / 227)</option>
+<option value="sec-138-ni">Section 138 NI Act — Cheque Dishonour Defense / Notice</option>
+<option value="nclat-nclt">NCLAT / NCLT — Insolvency &amp; Company Petition</option>
+<option value="district-trial">Other High Court / District Court Trial</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-space-md text-tertiary">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Field 4: Brief Summary of Dispute & Stage of Proceedings -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="dispute-summary">
+<span>Brief Summary of Dispute &amp; Stage of Proceedings <span class="text-secondary">*</span></span>
+<span class="text-legal-disclaimer text-on-surface-variant font-normal">Confidential synopsis</span>
+</label>
+<textarea class="w-full bg-surface-container px-space-md py-space-sm text-body-md text-on-surface placeholder:text-outline/60 rounded-DEFAULT focus:outline-none focus:ring-1 focus:ring-tertiary resize-y transition-shadow leading-relaxed" id="dispute-summary" name="dispute-summary" placeholder="Detail key facts: Lower Court / Impugned Order date, Court/Bench number, FIR number &amp; Police Station (if criminal), next listing date, or grounds for emergency mention before the Hon'ble Chief Justice." required="" rows="4"></textarea>
+</div>
+<!-- Field 5: Statutory Consent Checkbox -->
+<div class="p-space-sm bg-surface-container rounded-DEFAULT space-y-1">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input class="mt-1 w-4 h-4 rounded-DEFAULT bg-surface-container-high border-outline-variant text-tertiary focus:ring-0 focus:outline-none cursor-pointer" id="bci-consent" name="bci-consent" required="" type="checkbox"/>
+<span class="text-legal-disclaimer text-on-surface-variant leading-relaxed">
+<strong class="text-tertiary font-semibold uppercase">Statutory Declaration:</strong> I expressly declare that this request is voluntarily made for initiating contact and booking a professional legal consultation. I acknowledge that Advocate Shubham Singh does not advertise or solicit work in compliance with Rule 36 of the Bar Council of India Rules.
+                </span>
+</label>
+</div>
+<!-- Action Button -->
+<div class="pt-space-xs">
+<button class="w-full py-space-md px-space-lg bg-secondary-container hover:bg-on-secondary text-secondary-fixed font-label-md text-label-md uppercase tracking-widest rounded-DEFAULT shadow-lg flex items-center justify-center gap-space-sm transition-all" type="submit">
+<span>Submit Confidential Enquiry</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Success Confirmation Banner (Toggled via JS) -->
+<div class="hidden p-space-md bg-surface-container-high rounded-DEFAULT" id="form-status">
+<div class="flex items-center gap-space-xs text-tertiary font-label-md">
+<span class="material-symbols-outlined">check_circle</span>
+<span>Dossier Received by Registry</span>
+</div>
+<p class="text-legal-disclaimer text-on-surface-variant mt-1">
+                Your consultation request has been lodged directly into Advocate Shubham Singh's priority briefing queue. The Chamber Clerk will contact you within 2 business hours with a matter listing schedule.
+              </p>
+</div>
+<!-- Trust Note Immediately Below Button -->
+<div class="flex items-center justify-center gap-space-xs text-legal-disclaimer text-on-surface-variant text-center pt-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified_user</span>
+<span>Your details are kept confidential. Protected under statutory Advocate-Client privilege. No client data is ever disclosed or shared.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation Trajectory Steps (Bottom 3-Step Archival Timeline) -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile lg:px-margin py-space-3xl">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs text-tertiary text-legal-disclaimer uppercase font-semibold">
+<span class="material-symbols-outlined text-[14px]">account_tree</span>
+<span>Chamber Workflow Standard</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Consultation Trajectory</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            A structured procedural roadmap governing initial intake, evidence evaluation, and filing readiness at the Delhi High Court and Supreme Court of India.
+          </p>
+</div>
+<span class="text-legal-disclaimer font-legal-disclaimer text-tertiary-fixed-dim bg-surface-container px-space-md py-space-xs rounded-DEFAULT">
+          Registry Protocol Standard 2024
+        </span>
+</div>
+<!-- 3 Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="p-space-lg bg-surface-container rounded-DEFAULT shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold leading-none">01</span>
+<span class="material-symbols-outlined text-tertiary text-[24px]">fact_check</span>
+</div>
+<h3 class="font-headline-md text-subheading-serif text-on-surface">Dossier Triage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Upon submission, the Chamber Registry verifies territorial jurisdiction, assesses limitation periods, and completes mandatory conflict-of-interest vetting across opposing parties.
+            </p>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-legal-disclaimer text-tertiary uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Turnaround: Within 2 Hours</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg bg-surface-container rounded-DEFAULT shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold leading-none">02</span>
+<span class="material-symbols-outlined text-tertiary text-[24px]">forum</span>
+</div>
+<h3 class="font-headline-md text-subheading-serif text-on-surface">Merits Conference</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              In-person briefing with Advocate Shubham Singh at Sher Shah Road Chambers or via secure encrypted video conference. Rigorous analysis of lower court records and legal grounds.
+            </p>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-legal-disclaimer text-tertiary uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Personal Senior Evaluation</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg bg-surface-container rounded-DEFAULT shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold leading-none">03</span>
+<span class="material-symbols-outlined text-tertiary text-[24px]">draw</span>
+</div>
+<h3 class="font-headline-md text-subheading-serif text-on-surface">Vakalatnama &amp; Filing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Formal execution of Vakalatnama and drafting of Petition, SLP, or Rejoinder. Immediate lodging with Delhi High Court / Supreme Court E-Filing Portal for urgent mentioning.
+            </p>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs text-legal-disclaimer text-tertiary uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Bench Listing Expedited</span>
+</div>
+</div>
+</div>
+<!-- Institutional Assurance Footer Strip -->
+<div class="p-space-md bg-surface-container rounded-DEFAULT flex flex-col sm:flex-row items-center justify-between gap-space-md text-body-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[20px]">encrypted</span>
+<span>End-to-End Briefing Security: Case records are held under strict non-disclosure chamber protocol.</span>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="text-tertiary hover:text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center gap-1 transition-colors" href="tel:+911123388900">
+<span>Call Chamber Clerk</span>
+<span class="material-symbols-outlined text-[16px]">call</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 text-on-surface"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-3xl pb-space-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter lg:gap-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-DEFAULT bg-surface-container border border-tertiary/30 flex items-center justify-center text-tertiary"><span class="material-symbols-outlined text-body-md">balance</span></div><span class="font-headline-md text-subheading-serif text-on-surface tracking-widest font-semibold">SHUBHAM SINGH</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Chambers of Shubham Singh, Advocate-on-Record Practice &amp; Appellate Litigation before the Supreme Court of India, Delhi High Court, and Principal Appellate Tribunals.</p><div class="pt-space-xs space-y-space-xs text-legal-disclaimer font-legal-disclaimer text-tertiary-fixed-dim"><p class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-body-sm text-tertiary">apartment</span><span>Chamber 412, Lawyers Chambers Block II, High Court of Delhi, Sher Shah Road, New Delhi 110503</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-body-sm text-tertiary">call</span><span>+91 (011) 2338-8900</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-body-sm text-tertiary">mail</span><span>registry@shubhamsingh.law</span></p></div></div><div class="space-y-space-md"><h3 class="font-headline-md text-subheading-serif text-tertiary tracking-wide border-b border-outline-variant/20 pb-space-xs">Practice Areas</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="practice-areas" href="#">Constitutional &amp; Writ Petitions</a></li><li class="hover:text-on-surface transition-colors"><a data-path="practice-areas" href="#">Special Leave Petitions (SLP - Civil &amp; Criminal)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="practice-areas" href="#">Commercial Suits &amp; Appellate Arbitration</a></li><li class="hover:text-on-surface transition-colors"><a data-path="practice-areas" href="#">Insolvency &amp; Company Appeals (NCLAT)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="practice-areas" href="#">White-Collar Defense &amp; PMLA Registry</a></li><li class="hover:text-on-surface transition-colors"><a data-path="practice-areas" href="#">Competition &amp; Telecom Disputes (NCLAT/TDSAT)</a></li></ul></div><div class="space-y-space-md"><h3 class="font-headline-md text-subheading-serif text-tertiary tracking-wide border-b border-outline-variant/20 pb-space-xs">Courts of Practice</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="courts-jurisdictions" href="#">Supreme Court of India (Tilak Marg)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="courts-jurisdictions" href="#">High Court of Delhi (Sher Shah Road)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="courts-jurisdictions" href="#">National Company Law Appellate Tribunal (NCLAT)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="courts-jurisdictions" href="#">Armed Forces Tribunal (AFT Principal Bench)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="courts-jurisdictions" href="#">Telecom Disputes Settlement Appellate Tribunal (TDSAT)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="courts-jurisdictions" href="#">National Green Tribunal (NGT PB)</a></li></ul></div><div class="space-y-space-md"><h3 class="font-headline-md text-subheading-serif text-secondary tracking-wide border-b border-outline-variant/20 pb-space-xs">Vacation Bench Desk</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">For urgent mentions, interim stay reliefs, and emergency listing during judicial vacations or after-hours:</p><div class="p-space-md rounded-DEFAULT bg-surface-container-low border border-secondary-container/40 space-y-space-xs"><div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">emergency_home</span><span>URGENT BENCH HELPLINE</span></div><p class="font-headline-md text-subheading-serif text-on-surface font-semibold">+91 98100 00000</p><p class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant">Direct Line to Chamber Registry Associate</p></div><div class="pt-space-xs"><a class="inline-flex items-center gap-space-xs text-tertiary hover:text-tertiary-fixed font-label-md text-label-md uppercase tracking-wider" data-path="consultation-registry" href="#"><span>Proceed to Briefing Gateway</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div></div></div><div class="border-t border-outline-variant/30 bg-surface-container-lowest/80"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-lg space-y-space-md"><div class="p-space-md rounded-DEFAULT border border-tertiary/20 bg-surface-container-low/50"><h4 class="font-eyebrow text-eyebrow text-tertiary uppercase mb-1 flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px]">verified</span>Statutory Compliance • Bar Council of India Rule 36</h4><p class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant leading-relaxed text-justify">As per the rules of the Bar Council of India, an advocate is not permitted to solicit work or advertise in any manner. By entering this portal, the user acknowledges that the information provided herein is solely for informational purposes regarding the chambers and practice areas of Shubham Singh, Advocate, and does not create an advocate-client relationship. The chambers shall not be liable for any consequence of any action taken by the user relying on material or information provided on this platform. Users seeking legal assistance are advised to independently obtain competent counsel.</p></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm text-legal-disclaimer font-legal-disclaimer text-on-surface-variant"><p>© 2024 Chambers of Shubham Singh, Advocate. All Rights Reserved. Enrolled with the Bar Council of Delhi.</p><div class="flex items-center gap-space-md"><a class="hover:text-tertiary transition-colors" data-path="contact" href="#">Registry Inquiries</a><span>•</span><a class="hover:text-tertiary transition-colors" data-path="contact" href="#">Confidentiality Protocol</a><span>•</span><a class="hover:text-tertiary transition-colors" data-path="home" href="#">Archival Index</a></div></div></div></div></footer></body></html>

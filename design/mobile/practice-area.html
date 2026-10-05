@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0e141c;color:#dee2ef;}body{overscroll-behavior:none;font-family:'Hanken Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#343943", "secondary": "#ffb1c2", "on-tertiary": "#402d00", "on-secondary": "#620a2c", "surface-container-highest": "#30353f", "tertiary-container": "#1a1100", "error": "#ffb4ab", "on-tertiary-fixed": "#261a00", "on-primary": "#2a3040", "primary-fixed": "#dce2f6", "on-primary-fixed": "#151b2a", "secondary-fixed": "#ffd9df", "inverse-on-surface": "#2c313a", "on-surface-variant": "#c6c6cc", "error-container": "#93000a", "on-error": "#690005", "surface-dim": "#0e141c", "on-primary-container": "#777d8f", "on-tertiary-container": "#967a3c", "surface-container-high": "#252a34", "primary-fixed-dim": "#c0c6da", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#404757", "secondary-fixed-dim": "#ffb1c2", "on-background": "#dee2ef", "tertiary": "#e4c27d", "surface-container-low": "#171c25", "surface": "#0e141c", "tertiary-fixed-dim": "#e4c27d", "on-secondary-fixed": "#3f0018", "outline-variant": "#45474c", "background": "#0e141c", "primary": "#c0c6da", "on-secondary-fixed-variant": "#802442", "on-surface": "#dee2ef", "surface-variant": "#30353f", "on-tertiary-fixed-variant": "#5a4309", "inverse-surface": "#dee2ef", "surface-container": "#1b2029", "inverse-primary": "#585e6f", "surface-container-lowest": "#090e17", "surface-tint": "#c0c6da", "tertiary-fixed": "#ffdf9f", "outline": "#909096", "secondary-container": "#832644", "primary-container": "#0b1220", "on-secondary-container": "#ff9bb3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-2xl": "4rem", "space-3xl": "6rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "label-md": ["Hanken Grotesk"], "headline-xl-mobile": ["Bodoni Moda"], "legal-disclaimer": ["Hanken Grotesk"], "display-lg-mobile": ["Bodoni Moda"], "body-lg": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "eyebrow": ["Hanken Grotesk"], "headline-xl": ["Bodoni Moda"], "headline-md": ["Bodoni Moda"], "display-lg": ["Bodoni Moda"], "body-md": ["Hanken Grotesk"], "subheading-serif": ["Bodoni Moda"] }, "fontSize": { "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.01em", "fontWeight": "600" }], "legal-disclaimer": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "subheading-serif": ["20px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-primary-container/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)] pt-safe"><div class="h-20 px-gutter-mobile flex items-center justify-between"><div class="flex flex-col justify-center"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="font-eyebrow text-eyebrow text-tertiary uppercase">BCI / DHC / SC-ADVOCATE</span></div><div class="flex items-baseline gap-space-xs mt-0.5"><h1 class="font-headline-md text-headline-md tracking-[0.14em] text-on-surface uppercase">SHUBHAM SINGH</h1></div><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-[0.18em] text-tertiary-fixed-dim">ADVOCATE • DELHI</span><span class="text-[10px] text-outline">|</span><span class="font-eyebrow text-eyebrow text-on-surface-variant">Case Docket</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Call Advocate" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-high text-tertiary hover:bg-surface-container-highest transition-colors" href="tel:+911123380000"><span class="material-symbols-outlined text-[20px]">call</span></a><button aria-label="Navigation Menu" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[22px]">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida/AEtjO1UgYIcdXZaxZ9TZqaXEfPBGygt8wp_ZMHUuEUS83NxoAku_zeRe4hHpLdNF2tblC6usOevc3twSzZY2mfmTJltNvdUL1HSNdmGOEU-aKehXm8wZX98TezNZQ1plydKeoD9quIKdiNv_Bnnn-fAx0uol8lfh0OS_8ORLqn3WW-3ryn3Er6BzwlpdWywKUIWd4nIaXoRmlBFUEop1vHMa1YNkManhRIR7WoZ0fWEbtBemkcIqjittHBRrawQ"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-44 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Top Breadcrumb & Status Bar -->
+<div class="px-margin-mobile pt-space-sm pb-space-xs flex items-center justify-between bg-surface-container-lowest">
+<a class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span class="font-eyebrow text-[11px] uppercase tracking-wider text-outline">Practice Areas / Criminal</span>
+</a>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-eyebrow text-[10px] tracking-widest text-tertiary uppercase">Active Roster</span>
+</div>
+</div>
+<!-- Hero Visual Stage -->
+<div class="relative w-full overflow-hidden bg-primary-container">
+<div class="w-full h-60 bg-cover bg-center" data-alt="Dusk photograph of the stately Delhi High Court building illuminated with warm amber floodlights against a stormy twilight sky, dignified sandstone pillars reflecting on wet asphalt after rain, authoritative judicial architectural atmosphere in deep navy and gold tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn7NNzZQLg_0Z-vi2zVzjnMmOvh7B08gDnkaUtGKW66dKVXXJ_UITluCzdOyeGTh6BrmXv-TvcuGhKJ2NAXifU8f9Qv-h-NaCtCIy_QG-gyYXyZyQDSTpPwKoKn-gfxlndWRY1Xsf6DPyPdX7tMr5IkC6PMz1LPbn7XZxgFkGJrAvw2TyrNRdqwZLI7sqKvB4BYRIyPZk6R2flV3RfRYRpA3eGQnkE5lDZKYoIPx8x7rbga7myRCV0')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-primary-container/85 to-transparent"></div>
+<div class="relative px-margin-mobile -mt-16 pb-space-lg">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-high/90 backdrop-blur-md mb-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[14px]">balance</span>
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.16em]">Penal &amp; Appellate Defense • Delhi Roster</span>
+</div>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-wide uppercase leading-tight mb-space-xs">
+        Criminal Defense &amp; High Court Trial Advocacy
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+        Comprehensive courtroom defense, from urgent anticipatory bail before Sessions &amp; High Court to Section 482 CrPC quashing and PMLA appellate proceedings.
+      </p>
+<!-- Primary Action Buttons -->
+<div class="flex flex-col gap-space-xs">
+<a class="w-full h-12 flex items-center justify-center gap-2 px-space-md rounded bg-secondary-container text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-on-secondary transition-all" href="#urgent-briefing">
+<span>Brief Counsel on Urgent Matter</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="w-full h-12 flex items-center justify-center gap-2 px-space-md rounded bg-surface-container-high text-tertiary font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-highest transition-colors" id="downloadChecklistBtn">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download Defense Checklist (PDF)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Critical Remand & 24/7 Mentioning Callout -->
+<div class="px-margin-mobile my-space-md">
+<div class="relative overflow-hidden p-space-md rounded-xl bg-secondary-container text-on-secondary-container shadow-xl">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-on-secondary flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-eyebrow text-[11px] uppercase tracking-widest text-secondary-fixed">Remand Emergency Desk</span>
+<span class="px-1.5 py-0.2 rounded bg-on-secondary text-[10px] font-bold text-secondary-fixed uppercase">24/7</span>
+</div>
+<p class="font-subheading-serif text-[17px] leading-snug font-semibold text-secondary-fixed mb-1.5">
+            Arrest or Interrogation Summons?
+          </p>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim leading-snug mb-3">
+            Immediate vacation bench mentioning, Section 41A compliance scrutiny, and duty magistrate bail filings.
+          </p>
+<a class="inline-flex items-center gap-2 py-2 px-3 rounded bg-surface-container-lowest/90 text-tertiary font-label-md text-[13px] tracking-wider w-fit" href="tel:+919810088921">
+<span class="material-symbols-outlined text-[17px] text-tertiary">phone_in_talk</span>
+<span>Registry Mentioning: +91 98100 88921</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Defense Verticals (Core Chambers Practice) -->
+<section class="px-margin-mobile py-space-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.2em]">Chambers Core</span>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface uppercase tracking-wide">Defense Verticals</h3>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-mono">04 BENCHES</span>
+</div>
+<!-- Vertical 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-[11px] uppercase tracking-wider text-tertiary bg-tertiary-container/80 px-2 py-0.5 rounded">Liberty Safeguards</span>
+<span class="font-mono text-body-sm text-outline">S. 438 / 439 CrPC</span>
+</div>
+<h4 class="font-subheading-serif text-[19px] text-on-surface font-medium leading-tight">
+        Anticipatory &amp; Regular Bail
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Strategic, evidence-backed representation before Delhi District Sessions, Special CBI/ED Courts, High Court of Delhi, and Special Leave Petitions (SLP Criminal) at the Supreme Court.
+      </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Non-Bailable Warrants (NBW)</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Interim Protection</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Transit Bail</span>
+</div>
+</div>
+<!-- Vertical 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-[11px] uppercase tracking-wider text-tertiary bg-tertiary-container/80 px-2 py-0.5 rounded">Inherent Powers</span>
+<span class="font-mono text-body-sm text-outline">S. 482 / BNSS 528</span>
+</div>
+<h4 class="font-subheading-serif text-[19px] text-on-surface font-medium leading-tight">
+        FIR &amp; Charge-Sheet Quashing
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Invoking constitutional remedies against abuse of legal process. Striking down vexatious criminal proceedings in commercial disputes, matrimonial discord, and malicious prosecution.
+      </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Commercial Fraud Cloaks</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">498A / IPC 406</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Discharge Arguments</span>
+</div>
+</div>
+<!-- Vertical 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-[11px] uppercase tracking-wider text-tertiary bg-tertiary-container/80 px-2 py-0.5 rounded">Special Statutes</span>
+<span class="font-mono text-body-sm text-outline">PMLA / PC Act / SFIO</span>
+</div>
+<h4 class="font-subheading-serif text-[19px] text-on-surface font-medium leading-tight">
+        White-Collar &amp; Economic Offenses
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Handling Enforcement Directorate (ED) ECIR summons, twin-condition thresholds under Section 45 PMLA, CBI trials, SFIO company investigations, and provisional property attachments.
+      </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Appellate Tribunal (SAFEMA)</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Summons Quashing</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Benami Prohibition</span>
+</div>
+</div>
+<!-- Vertical 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-[11px] uppercase tracking-wider text-tertiary bg-tertiary-container/80 px-2 py-0.5 rounded">Substantive Appeal</span>
+<span class="font-mono text-body-sm text-outline">S. 374 / 397 CrPC</span>
+</div>
+<h4 class="font-subheading-serif text-[19px] text-on-surface font-medium leading-tight">
+        Appellate Reversals &amp; Sentence Suspensions
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Dissecting flawed appreciation of evidence, chain-of-custody violations, and medical jurisprudence contradictions to overturn trial court convictions.
+      </p>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Section 389 Suspension</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Revision Petitions</span>
+<span class="px-2 py-1 rounded bg-surface-container text-[11px] text-on-surface-variant">Supreme Court SLPs</span>
+</div>
+</div>
+</section>
+<!-- Procedure & Courtroom Hearing Stages (Architectural Step Flow) -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="p-space-md rounded-xl bg-surface-container shadow-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tertiary text-[20px]">account_tree</span>
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.18em]">Judicial Protocol</span>
+</div>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface uppercase mb-space-md">
+        Procedure &amp; Hearing Stages
+      </h3>
+<div class="space-y-space-md relative pl-4">
+<!-- Connecting Line -->
+<div class="absolute left-1.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 1 -->
+<div class="relative pl-6">
+<div class="absolute -left-4 top-0.5 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-tertiary">
+            1
+          </div>
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">FIR &amp; Remand Assessment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Micro-audit of the First Information Report, general diary entry timestamps, jurisdictional legality, and Arnesh Kumar guideline adherence.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="relative pl-6">
+<div class="absolute -left-4 top-0.5 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-tertiary">
+            2
+          </div>
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Drafting Urgent Petition</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Crafting urgent pleadings in chambers, annexing certified medical dossiers, demonstrating lack of custodial necessity, and drafting stay applications.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="relative pl-6">
+<div class="absolute -left-4 top-0.5 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-tertiary">
+            3
+          </div>
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Registry Filing &amp; Bench Mentioning</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Electronic filing via Delhi High Court portal, defect clearance by senior clerks, and urgent verbal mentioning before the Chief Justice/Roster Bench at 10:30 AM.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="relative pl-6">
+<div class="absolute -left-4 top-0.5 w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-[10px] font-bold text-secondary">
+            4
+          </div>
+<h4 class="font-label-md text-label-md text-secondary uppercase tracking-wider">Oral Courtroom Advocacy</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Vigorous argument by counsel addressing twin-condition bars, establishing mala fides, and securing ex-parte interim stay or bail bonds release.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Statutory Checklist for Accused Persons (Interactive Delight) -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.16em]">Rights of Accused</span>
+<span class="font-mono text-body-sm text-tertiary bg-tertiary-container px-2 py-0.5 rounded" id="checklistCounter">0 / 4 VERIFIED</span>
+</div>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface uppercase mb-1">
+        Statutory Safeguards Checklist
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Tap each protection to verify compliance under the Code of Criminal Procedure and constitutional mandates:
+      </p>
+<div class="space-y-space-xs" id="statutoryChecklist">
+<!-- Item 1 -->
+<div class="checklist-item flex items-start gap-space-sm p-3 rounded-lg bg-surface-container cursor-pointer select-none transition-all active:scale-[0.99]" data-checked="false">
+<div class="check-box w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 text-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] hidden check-icon">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface">Section 41A CrPC Written Notice</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-0.5">Mandatory prior summon notice before arrest for offenses punishable under 7 years.</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="checklist-item flex items-start gap-space-sm p-3 rounded-lg bg-surface-container cursor-pointer select-none transition-all active:scale-[0.99]" data-checked="false">
+<div class="check-box w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 text-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] hidden check-icon">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface">Certified Remand Copy Delivery</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-0.5">Grounds of arrest must be supplied in writing to the accused and briefed advocate.</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="checklist-item flex items-start gap-space-sm p-3 rounded-lg bg-surface-container cursor-pointer select-none transition-all active:scale-[0.99]" data-checked="false">
+<div class="check-box w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 text-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] hidden check-icon">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface">Independent Medical Examination</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-0.5">Section 54 CrPC checkup by a registered medical practitioner every 48 hours in custody.</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="checklist-item flex items-start gap-space-sm p-3 rounded-lg bg-surface-container cursor-pointer select-none transition-all active:scale-[0.99]" data-checked="false">
+<div class="check-box w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 text-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] hidden check-icon">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface">Right to Counsel During Interrogation</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-0.5">Section 41D entitlement to confer with defense counsel during interrogation phases.</span>
+</div>
+</div>
+</div>
+<div class="hidden mt-space-sm p-3 rounded bg-secondary-container text-secondary-fixed text-center font-label-md text-label-md" id="checklistCompleteBanner">
+        ✓ Safeguard Dossier Ready for Filing Review
+      </div>
+</div>
+</section>
+<!-- Chambers Case Citing & Precedent Record -->
+<section class="mt-space-xl px-margin-mobile">
+<div class="p-space-md rounded-xl bg-surface-container-highest/60 backdrop-blur-md shadow-inner space-y-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.16em]">Precedent Repository</span>
+</div>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface uppercase">
+        Significant Delhi Bench Matters
+      </h3>
+<div class="space-y-space-xs pt-1">
+<div class="p-3 rounded bg-surface-container-low">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-md text-[13px] text-on-surface">Bail in ₹240 Cr Syndicate Offense</span>
+<span class="font-eyebrow text-[10px] text-tertiary">DELHI HIGH COURT</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">
+            Secured regular bail challenging parity and period of incarceration without framing of formal charges.
+          </p>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-md text-[13px] text-on-surface">S. 482 Quashing in Corporate Defamation</span>
+<span class="font-eyebrow text-[10px] text-tertiary">BENCH RULING</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">
+            Dismissed summons against managing directors by demonstrating lack of mens rea and commercial intent.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Accordion FAQs -->
+<section class="mt-space-xl px-margin-mobile space-y-space-xs">
+<div class="flex flex-col mb-space-sm">
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.16em]">Inquiries &amp; Answers</span>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface uppercase">
+        Frequently Addressed Questions
+      </h3>
+</div>
+<!-- FAQ 1 -->
+<details class="group p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<summary class="flex items-center justify-between font-label-md text-[13px] text-on-surface uppercase tracking-wide list-none">
+<span>Can Anticipatory Bail be moved directly before Delhi High Court?</span>
+<span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2">expand_more</span>
+</summary>
+<div class="pt-2.5 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        While concurrent jurisdiction exists under Section 438 CrPC, the established convention requires filing before the Sessions Court first, unless extraordinary circumstances (e.g., immediate apprehension of arrest during court holidays, multi-state jurisdictional conflicts, or high-profile agency action) warrant a direct petition.
+      </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<summary class="flex items-center justify-between font-label-md text-[13px] text-on-surface uppercase tracking-wide list-none">
+<span>What is the procedure during court vacations?</span>
+<span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2">expand_more</span>
+</summary>
+<div class="pt-2.5 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        The Delhi High Court designates Vacation Benches for urgent matters concerning imminent arrest and personal liberty. A formal mentioning slip outlining urgency must be submitted to the designated Vacation Registrar before 11:00 AM for same-day or next-day listing.
+      </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<summary class="flex items-center justify-between font-label-md text-[13px] text-on-surface uppercase tracking-wide list-none">
+<span>Required documents for S. 482 Quashing Petitions?</span>
+<span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2">expand_more</span>
+</summary>
+<div class="pt-2.5 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Certified true copy of the FIR, Charge-Sheet (if filed), witness statements under Section 161 CrPC, original civil agreements or contractual paper trails showing non-criminal dispute nature, and supporting case citations showing patent abuse of authority.
+      </div>
+</details>
+</section>
+<!-- Urgent Briefing Dispatch Gateway -->
+<section class="mt-space-2xl px-margin-mobile mb-space-md" id="urgent-briefing">
+<div class="p-space-lg rounded-xl bg-surface-container shadow-xl">
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.2em]">Confidential Gateway</span>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface uppercase mt-1 mb-space-xs">
+        Transmit Case Dossier
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        For immediate appraisal by Shubham Singh and Senior Associates. All transmissions are protected under Attorney-Client Privilege.
+      </p>
+<form class="space-y-space-sm" id="dossierForm" onsubmit="event.preventDefault(); alert('Brief submitted to Chamber Registry. An associate advocate will connect within 15 minutes.');">
+<div>
+<label class="block font-eyebrow text-[11px] uppercase tracking-wider text-outline mb-1">Briefing Solicitor / Client Full Name</label>
+<input class="w-full h-11 px-3 rounded bg-surface-container-high text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" placeholder="Adv. / Litigant Name" required="" type="text"/>
+</div>
+<div>
+<label class="block font-eyebrow text-[11px] uppercase tracking-wider text-outline mb-1">Direct Calling / WhatsApp Mobile</label>
+<input class="w-full h-11 px-3 rounded bg-surface-container-high text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" placeholder="+91 XXXXX XXXXX" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-eyebrow text-[11px] uppercase tracking-wider text-outline mb-1">Matter Stage &amp; Police Station / Court</label>
+<input class="w-full h-11 px-3 rounded bg-surface-container-high text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" placeholder="e.g. Pre-Arrest Notice, PS Tilak Marg" required="" type="text"/>
+</div>
+<div>
+<label class="block font-eyebrow text-[11px] uppercase tracking-wider text-outline mb-1">Brief Summary of Urgency</label>
+<textarea class="w-full p-3 rounded bg-surface-container-high text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" placeholder="Specify date of summons, custody timeline, or high court hearing..." rows="3"></textarea>
+</div>
+<button class="w-full h-12 flex items-center justify-center gap-2 rounded bg-secondary-container text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-lg hover:bg-on-secondary transition-all mt-space-md" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Submit for Urgent Review</span>
+</button>
+</form>
+</div>
+</section>
+<!-- Client Interaction Script for Checklist -->
+<script>
+    (function initStatutoryChecklist() {
+      const items = document.querySelectorAll('.checklist-item');
+      const counter = document.getElementById('checklistCounter');
+      const banner = document.getElementById('checklistCompleteBanner');
+      const downloadBtn = document.getElementById('downloadChecklistBtn');
+
+      if (!items.length) return;
+
+      let verifiedCount = 0;
+
+      items.forEach(item => {
+        item.addEventListener('click', () => {
+          const isChecked = item.getAttribute('data-checked') === 'true';
+          const box = item.querySelector('.check-box');
+          const icon = item.querySelector('.check-icon');
+
+          if (!isChecked) {
+            item.setAttribute('data-checked', 'true');
+            box.classList.remove('bg-surface-container-highest', 'text-surface-container');
+            box.classList.add('bg-tertiary', 'text-on-tertiary');
+            icon.classList.remove('hidden');
+            verifiedCount++;
+          } else {
+            item.setAttribute('data-checked', 'false');
+            box.classList.add('bg-surface-container-highest', 'text-surface-container');
+            box.classList.remove('bg-tertiary', 'text-on-tertiary');
+            icon.classList.add('hidden');
+            verifiedCount--;
+          }
+
+          if (counter) {
+            counter.textContent = `${verifiedCount} / ${items.length} VERIFIED`;
+          }
+
+          if (banner) {
+            if (verifiedCount === items.length) {
+              banner.classList.remove('hidden');
+            } else {
+              banner.classList.add('hidden');
+            }
+          }
+        });
+      });
+
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+          downloadBtn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Generating Chamber PDF...</span>`;
+          setTimeout(() => {
+            downloadBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Checklist PDF Downloaded</span>`;
+            setTimeout(() => {
+              downloadBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">download_for_offline</span><span>Download Defense Checklist (PDF)</span>`;
+            }, 3000);
+          }, 900);
+        });
+      }
+    })();
+  </script>
+</div><footer class="mt-space-2xl px-margin-mobile pt-space-xl pb-space-lg bg-surface-container-low text-on-surface-variant"><div class="space-y-space-md"><details class="group"><summary class="flex justify-between items-center py-space-sm cursor-pointer list-none"><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Practice Areas</span><span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200">expand_more</span></summary><div class="py-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p>Constitutional Writs &amp; Appellate Advocacy</p><p>White-Collar Defense &amp; Special Statutes</p><p>Corporate Insolvency &amp; Commercial Disputes</p><p>Arbitration &amp; High Court Review Petitions</p></div></details><details class="group"><summary class="flex justify-between items-center py-space-sm cursor-pointer list-none"><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Primary Jurisdictions</span><span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200">expand_more</span></summary><div class="py-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p>Supreme Court of India (Tilak Marg, New Delhi)</p><p>High Court of Delhi (Sher Shah Road, New Delhi)</p><p>National Company Law Appellate Tribunal (NCLAT)</p><p>Special CBI &amp; Enforcement Directorate Courts</p></div></details><details class="group"><summary class="flex justify-between items-center py-space-sm cursor-pointer list-none"><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Chamber Coordinates</span><span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200">expand_more</span></summary><div class="py-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="text-on-surface font-medium">Chamber Block Lawyers Complex, Supreme Court</p><p>Consultation Chambers: Golf Links &amp; Defence Colony, New Delhi</p><p>Registry Direct: +91 11 2338 0000</p><p>Registry Dispatch: briefs@shubhamsingh.law</p></div></details></div><div class="mt-space-xl pt-space-md text-center"><p class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.2em] mb-space-xs">Statutory Bar Council Notice</p><p class="font-legal-disclaimer text-legal-disclaimer text-outline leading-relaxed text-justify">This mobile interface is configured strictly to provide institutional case information and coordinates for enrolled clients and briefing solicitors. As per the rules of the Bar Council of India under Rule 36 of Chapter II, Part VI of the Bar Council of India Rules (Advocates Act, 1961), an advocate is strictly prohibited from soliciting work or advertising. Accessing this platform signifies explicit, unsolicited acknowledgment of professional representation requirements.</p></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-tertiary font-bold"><div class="px-gutter-mobile pt-space-xs pb-space-sm grid grid-cols-2 gap-space-sm"><a class="h-12 flex items-center justify-center gap-space-xs rounded-lg bg-surface-container text-tertiary hover:bg-surface-container-high transition-colors" data-path="call-chambers" href="tel:+911123380000"><span class="material-symbols-outlined text-[20px]">call</span><span class="font-label-md text-label-md uppercase tracking-wider">Call Chambers</span></a><a class="h-12 flex items-center justify-center gap-space-xs rounded-lg bg-secondary-container text-secondary-fixed hover:bg-on-secondary transition-colors" data-path="briefing-request" href="https://wa.me/919999999999"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-label-md text-label-md uppercase tracking-wider">WhatsApp Briefing</span></a></div><div class="flex justify-around items-center h-12 px-gutter-mobile"><a class="flex flex-col items-center justify-center w-12 h-11 text-on-surface-variant hover:text-on-surface transition-all" data-path="overview" href="#"><span class="material-symbols-outlined text-[19px]">gavel</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Practice</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-12 h-11 transition-all text-tertiary font-bold" data-path="case-docket" href="#"><span class="material-symbols-outlined text-[19px]">folder_special</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Dockets</span></a><a class="flex flex-col items-center justify-center w-12 h-11 text-on-surface-variant hover:text-on-surface transition-all" data-path="opinions" href="#"><span class="material-symbols-outlined text-[19px]">article</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Citations</span></a><a class="flex flex-col items-center justify-center w-12 h-11 text-on-surface-variant hover:text-on-surface transition-all" data-path="briefing-request" href="#"><span class="material-symbols-outlined text-[19px]">send</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Consult</span></a></div></nav></body></html>

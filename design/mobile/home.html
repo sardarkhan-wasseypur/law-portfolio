@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0e141c;color:#dee2ef;}body{overscroll-behavior:none;font-family:'Hanken Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#343943", "secondary": "#ffb1c2", "on-tertiary": "#402d00", "on-secondary": "#620a2c", "surface-container-highest": "#30353f", "tertiary-container": "#1a1100", "error": "#ffb4ab", "on-tertiary-fixed": "#261a00", "on-primary": "#2a3040", "primary-fixed": "#dce2f6", "on-primary-fixed": "#151b2a", "secondary-fixed": "#ffd9df", "inverse-on-surface": "#2c313a", "on-surface-variant": "#c6c6cc", "error-container": "#93000a", "on-error": "#690005", "surface-dim": "#0e141c", "on-primary-container": "#777d8f", "on-tertiary-container": "#967a3c", "surface-container-high": "#252a34", "primary-fixed-dim": "#c0c6da", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#404757", "secondary-fixed-dim": "#ffb1c2", "on-background": "#dee2ef", "tertiary": "#e4c27d", "surface-container-low": "#171c25", "surface": "#0e141c", "tertiary-fixed-dim": "#e4c27d", "on-secondary-fixed": "#3f0018", "outline-variant": "#45474c", "background": "#0e141c", "primary": "#c0c6da", "on-secondary-fixed-variant": "#802442", "on-surface": "#dee2ef", "surface-variant": "#30353f", "on-tertiary-fixed-variant": "#5a4309", "inverse-surface": "#dee2ef", "surface-container": "#1b2029", "inverse-primary": "#585e6f", "surface-container-lowest": "#090e17", "surface-tint": "#c0c6da", "tertiary-fixed": "#ffdf9f", "outline": "#909096", "secondary-container": "#832644", "primary-container": "#0b1220", "on-secondary-container": "#ff9bb3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-2xl": "4rem", "space-3xl": "6rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "label-md": ["Hanken Grotesk"], "headline-xl-mobile": ["Bodoni Moda"], "legal-disclaimer": ["Hanken Grotesk"], "display-lg-mobile": ["Bodoni Moda"], "body-lg": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "eyebrow": ["Hanken Grotesk"], "headline-xl": ["Bodoni Moda"], "headline-md": ["Bodoni Moda"], "display-lg": ["Bodoni Moda"], "body-md": ["Hanken Grotesk"], "subheading-serif": ["Bodoni Moda"] }, "fontSize": { "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.01em", "fontWeight": "600" }], "legal-disclaimer": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "subheading-serif": ["20px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-primary-container/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)] pt-safe"><div class="h-20 px-gutter-mobile flex items-center justify-between"><div class="flex flex-col justify-center"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="font-eyebrow text-eyebrow text-tertiary uppercase">BCI / DHC / SC-ADVOCATE</span></div><div class="flex items-baseline gap-space-xs mt-0.5"><h1 class="font-headline-md text-headline-md tracking-[0.14em] text-on-surface uppercase">SHUBHAM SINGH</h1></div><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-[0.18em] text-tertiary-fixed-dim">ADVOCATE • DELHI</span><span class="text-[10px] text-outline">|</span><span class="font-eyebrow text-eyebrow text-on-surface-variant">Overview</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Call Advocate" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-high text-tertiary hover:bg-surface-container-highest transition-colors" href="tel:+911123380000"><span class="material-symbols-outlined text-[20px]">call</span></a><button aria-label="Navigation Menu" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[22px]">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida/AEtjO1UgYIcdXZaxZ9TZqaXEfPBGygt8wp_ZMHUuEUS83NxoAku_zeRe4hHpLdNF2tblC6usOevc3twSzZY2mfmTJltNvdUL1HSNdmGOEU-aKehXm8wZX98TezNZQ1plydKeoD9quIKdiNv_Bnnn-fAx0uol8lfh0OS_8ORLqn3WW-3ryn3Er6BzwlpdWywKUIWd4nIaXoRmlBFUEop1vHMa1YNkManhRIR7WoZ0fWEbtBemkcIqjittHBRrawQ"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-44 bg-surface"><div class="flex flex-col w-full">
+<!-- Architectural Hero & Advocate Profile -->
+<section class="relative px-margin-mobile pt-space-md pb-space-xl flex flex-col gap-space-lg">
+<!-- Regulatory Top Badge -->
+<div class="flex items-center gap-space-xs self-start px-space-sm py-1 rounded bg-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-eyebrow text-eyebrow tracking-[0.2em] text-tertiary uppercase">BCI / DELHI • ENROLMENT D/1942/2012</span>
+</div>
+<!-- Editorial Title & Narrative -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase tracking-[0.24em] text-on-surface-variant">SUPREME COURT &amp; HIGH COURT ADVOCACY</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight uppercase">
+        Appellate Jurisprudence &amp; Strategic Defense
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+        Advocate Shubham Singh represents individual litigants, corporate boards, and key stakeholders before the Supreme Court of India and Delhi High Court in landmark constitutional, criminal, and commercial controversies.
+      </p>
+</div>
+<!-- Advocate Portrait Showcase Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center gap-space-md">
+<div class="relative w-24 h-24 rounded-lg overflow-hidden shrink-0 shadow-md">
+<img alt="Advocate Shubham Singh" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UgYIcdXZaxZ9TZqaXEfPBGygt8wp_ZMHUuEUS83NxoAku_zeRe4hHpLdNF2tblC6usOevc3twSzZY2mfmTJltNvdUL1HSNdmGOEU-aKehXm8wZX98TezNZQ1plydKeoD9quIKdiNv_Bnnn-fAx0uol8lfh0OS_8ORLqn3WW-3ryn3Er6BzwlpdWywKUIWd4nIaXoRmlBFUEop1vHMa1YNkManhRIR7WoZ0fWEbtBemkcIqjittHBRrawQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-eyebrow text-eyebrow tracking-widest text-tertiary uppercase">Senior Chamber Counsel</span>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface truncate">Shubham Singh</h3>
+<span class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant mt-0.5">LL.B. (Campus Law Centre), Delhi Bar Council</span>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified</span>
+<span class="font-label-md text-[11px] uppercase tracking-wider text-tertiary">Active Supreme Court Bar Roll</span>
+</div>
+</div>
+</div>
+<!-- Credential Metrics Grid -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs bg-surface-container-low rounded-lg p-space-sm text-center">
+<div class="flex flex-col">
+<span class="font-headline-md text-[20px] text-tertiary leading-tight">12+</span>
+<span class="font-legal-disclaimer text-legal-disclaimer uppercase text-on-surface-variant mt-0.5">Years Standing</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[20px] text-on-surface leading-tight">450+</span>
+<span class="font-legal-disclaimer text-legal-disclaimer uppercase text-on-surface-variant mt-0.5">Matters Argued</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[20px] text-tertiary leading-tight">Ex-Panel</span>
+<span class="font-legal-disclaimer text-legal-disclaimer uppercase text-on-surface-variant mt-0.5">Counsel UOI</span>
+</div>
+</div>
+</div>
+<!-- Hero Action Buttons -->
+<div class="flex flex-col gap-space-sm">
+<a class="h-12 flex items-center justify-center gap-space-xs rounded bg-secondary-container text-on-secondary-container hover:bg-on-secondary transition-colors px-space-lg text-center shadow-md" href="https://wa.me/919810088921">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Request Chamber Consultation</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface">arrow_forward</span>
+</a>
+<a class="h-12 flex items-center justify-center gap-space-xs rounded bg-surface-container-high text-tertiary hover:bg-surface-container-highest transition-colors px-space-lg text-center" href="#jurisdictions">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">View Practice Areas &amp; Benches</span>
+</a>
+</div>
+</section>
+<!-- Jurisdictional Domains (Practice Areas) -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-lowest flex flex-col gap-space-lg" id="jurisdictions">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-0.5 bg-tertiary"></span>
+<span class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.2em]">Institutional Representation</span>
+</div>
+<h3 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface uppercase">Jurisdictional Domains</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Appellate advocacy and rigorous defense articulated before constitution benches, criminal divisions, and commercial arbitration tribunals.</p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Domain Tile 1 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-sm active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-tertiary">Penal Statutes &amp; Investigation</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">gavel</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Criminal Defense, Bail &amp; PMLA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          High-stakes regular and anticipatory bail petitions before the High Court of Delhi and Supreme Court. Quashing of FIRs under Section 482 CrPC and rigorous defense under the Prevention of Money Laundering Act (ED proceedings).
+        </p>
+<div class="flex items-center gap-1 text-tertiary pt-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider">Explore Defense Protocol</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Domain Tile 2 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-sm active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-secondary">Supreme Court Jurisprudence</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">balance</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Constitutional Writs &amp; Special Leave Petitions (SLP)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Invoking Article 32 and Article 226 writ jurisdictions for fundamental rights enforcement. Filing and arguing Special Leave Petitions (Civil and Criminal) under Article 136 against impugned High Court orders.
+        </p>
+<div class="flex items-center gap-1 text-tertiary pt-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider">Appellate Bench Review</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Domain Tile 3 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-sm active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-tertiary">Arbitral &amp; Tribunal Matrix</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">domain</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Commercial Suits, Arbitration &amp; Section 34</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Arbitration applications under Section 11, setting aside awards under Section 34 of the A&amp;C Act, and commercial appeals before the Commercial Division of the High Court and NCLAT.
+        </p>
+<div class="flex items-center gap-1 text-tertiary pt-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider">Tribunal Strategy</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Domain Tile 4 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-sm active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-secondary">Negotiable Instruments Act</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">receipt_long</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Cheque Bounce (Sec 138 NI Act)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          High-value dishonour litigation, legal demand notice structuring, summoning challenges, and rapid compoundability negotiations across Delhi District Courts and High Court revisions.
+        </p>
+<div class="flex items-center gap-1 text-tertiary pt-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider">Statutory Notice Workflow</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Domain Tile 5 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-sm active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-tertiary">Family Division &amp; Succession</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">family_restroom</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Matrimonial &amp; Family Appellate Matters</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Discreet handling of cross-border custody disputes, Section 498A defense, mutual settlements, and matrimonial appeals before High Court division benches.
+        </p>
+<div class="flex items-center gap-1 text-tertiary pt-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider">Confidential Briefing</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- "Who We Counsel" Ivory High-Contrast Card Stack -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase tracking-[0.2em] text-tertiary">Tailored Counsel</span>
+<h3 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface uppercase">Litigant Profiles We Represent</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Strategic legal deployment customized according to personal vulnerability and institutional liability.</p>
+</div>
+<!-- Parchment Contrast Container -->
+<div class="rounded-xl p-space-md bg-secondary-fixed text-on-secondary-fixed shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-eyebrow text-eyebrow tracking-widest uppercase text-on-secondary">Target Stakeholders</span>
+<span class="material-symbols-outlined text-on-secondary text-[20px]">shield_person</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Profile Item 1 -->
+<div class="p-space-sm rounded bg-surface-dim/10 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-secondary text-[22px] shrink-0 mt-0.5">business_center</span>
+<div class="flex flex-col">
+<h4 class="font-headline-md text-[18px] text-on-secondary-fixed leading-tight">Corporate Directors &amp; Promoters</h4>
+<p class="font-body-sm text-[13px] text-on-secondary-fixed/90 mt-1">Facing vicarious liability under Section 141 NI Act, SFIO probes, or regulatory summons before economic offense tribunals.</p>
+</div>
+</div>
+<!-- Profile Item 2 -->
+<div class="p-space-sm rounded bg-surface-dim/10 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-secondary text-[22px] shrink-0 mt-0.5">emergency</span>
+<div class="flex flex-col">
+<h4 class="font-headline-md text-[18px] text-on-secondary-fixed leading-tight">Litigants Facing Immediate Custody</h4>
+<p class="font-body-sm text-[13px] text-on-secondary-fixed/90 mt-1">Requiring immediate transit bail, pre-arrest relief, or midnight petition mentioning before High Court duty magistrate benches.</p>
+</div>
+</div>
+<!-- Profile Item 3 -->
+<div class="p-space-sm rounded bg-surface-dim/10 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-secondary text-[22px] shrink-0 mt-0.5">account_balance_wallet</span>
+<div class="flex flex-col">
+<h4 class="font-headline-md text-[18px] text-on-secondary-fixed leading-tight">High Net-Worth Individuals &amp; NRIs</h4>
+<p class="font-body-sm text-[13px] text-on-secondary-fixed/90 mt-1">Protecting domestic assets against attachment, succession litigation, look-out circulars (LOCs), and cross-border matrimonial claims.</p>
+</div>
+</div>
+<!-- Profile Item 4 -->
+<div class="p-space-sm rounded bg-surface-dim/10 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-secondary text-[22px] shrink-0 mt-0.5">description</span>
+<div class="flex flex-col">
+<h4 class="font-headline-md text-[18px] text-on-secondary-fixed leading-tight">Briefing Solicitors &amp; Outstation Advocates</h4>
+<p class="font-body-sm text-[13px] text-on-secondary-fixed/90 mt-1">Seeking experienced Delhi counsel for effective mentioning, settled SLP pleadings, and vigorous Supreme Court oral advocacy.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Procedural Roadmap (Chamber Protocol) -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase tracking-[0.2em] text-tertiary">Chamber Procedure</span>
+<h3 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface uppercase">Appellate Case Pathway</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A disciplined 3-step institutional methodology ensuring rigorous brief preparation before judicial entry.</p>
+</div>
+<div class="relative flex flex-col gap-space-md pl-4">
+<!-- Connecting Vertical Track -->
+<div class="absolute left-[27px] top-4 bottom-8 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 1 -->
+<div class="relative flex items-start gap-space-md z-10">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-tertiary flex items-center justify-center font-eyebrow text-eyebrow shrink-0 shadow">
+          1
+        </div>
+<div class="p-space-md rounded-lg bg-surface-container w-full flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Confidential Docket Review</h4>
+<span class="font-legal-disclaimer text-legal-disclaimer text-tertiary uppercase tracking-wider">Step 01</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Litigants share certified trial court record, charge-sheets, or impugned appellate orders under strict attorney-client privilege. Initial assessment of constitutional maintainability.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-space-md z-10">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-eyebrow text-eyebrow shrink-0 shadow">
+          2
+        </div>
+<div class="p-space-md rounded-lg bg-surface-container w-full flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Senior Merits Conference</h4>
+<span class="font-legal-disclaimer text-legal-disclaimer text-secondary uppercase tracking-wider">Step 02</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Comprehensive 45-minute in-person or encrypted video conference at the Delhi Chambers. Distillation of legal propositions, precedents, and bench precedents.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-space-md z-10">
+<div class="w-7 h-7 rounded-full bg-tertiary-container text-tertiary flex items-center justify-center font-eyebrow text-eyebrow shrink-0 shadow">
+          3
+        </div>
+<div class="p-space-md rounded-lg bg-surface-container w-full flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Drafting &amp; High Court Listing</h4>
+<span class="font-legal-disclaimer text-legal-disclaimer text-tertiary uppercase tracking-wider">Step 03</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pleadings vetted and filed through the Supreme Court/Delhi High Court e-filing portal. Urgent mentioning for supplementary listing before the Hon'ble Chief Justice's bench.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Legal Insights & Citations -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase tracking-[0.2em] text-tertiary">Publications &amp; Case Notes</span>
+<h3 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface uppercase">Recent Legal Insights</h3>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[26px]">menu_book</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Article 1 -->
+<article class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-eyebrow text-eyebrow text-tertiary tracking-widest uppercase">Criminal Jurisprudence</span>
+<span class="font-legal-disclaimer text-legal-disclaimer">5 Min Read • Oct 2024</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Section 482 CrPC Quashing: When High Courts Must Intervene in Commercial Disputes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+          Analysis of recent Supreme Court precedents restricting criminal prosecution in bona fide civil breaches, with guidelines for framing quashing petitions against frivolous FIRs.
+        </p>
+<div class="flex items-center gap-space-xs pt-space-xs text-tertiary font-label-md text-label-md uppercase tracking-wider">
+<span>Read Case Note</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-eyebrow text-eyebrow text-secondary tracking-widest uppercase">Negotiable Instruments</span>
+<span class="font-legal-disclaimer text-legal-disclaimer">7 Min Read • Aug 2024</span>
+</div>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface">Section 138 Statutory Demand Notice: Fatal Flaws That Invalidate Complaints</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+          Strategic breakdown of the strict 15-day notice timeline, delivery presumption under Section 27 General Clauses Act, and managing claims against independent directors.
+        </p>
+<div class="flex items-center gap-space-xs pt-space-xs text-tertiary font-label-md text-label-md uppercase tracking-wider">
+<span>Read Case Note</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Accordion FAQ Section -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase tracking-[0.2em] text-tertiary">Registry &amp; Engagement</span>
+<h3 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface uppercase">Frequently Asked Questions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Institutional clarity on chamber retainers, urgent listings, and outstation client protocols.</p>
+</div>
+<div class="flex flex-col gap-space-xs" id="faq-accordion-group">
+<!-- FAQ 1 -->
+<div class="rounded-lg bg-surface-container overflow-hidden">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-space-sm faq-toggle" type="button">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">What matters can be mentioned for urgent same-day listing?</span>
+<span class="material-symbols-outlined text-tertiary transition-transform duration-200 faq-icon">add</span>
+</button>
+<div class="px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm hidden faq-content">
+          Matters involving imminent threat of arrest, impending demolition of immovable property, stay on corporate bank guarantees, or scheduled auction sales can be mentioned at 10:30 AM before the Court of the Hon’ble Chief Justice upon submitting a formal letter of urgency.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-lg bg-surface-container overflow-hidden">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-space-sm faq-toggle" type="button">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">How are chamber consultations scheduled before Supreme Court benches?</span>
+<span class="material-symbols-outlined text-tertiary transition-transform duration-200 faq-icon">add</span>
+</button>
+<div class="px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm hidden faq-content">
+          Initial briefing requires digital transmission of the impugned High Court decree or trial order. Once reviewed by the chamber clerk for maintainability, a formal merits consultation is scheduled at the Supreme Court Lawyers Complex Chamber or via virtual conference.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-lg bg-surface-container overflow-hidden">
+<button aria-expanded="false" class="w-full p-space-md text-left flex items-center justify-between gap-space-sm faq-toggle" type="button">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Does the chamber handle outstation or hybrid video hearings?</span>
+<span class="material-symbols-outlined text-tertiary transition-transform duration-200 faq-icon">add</span>
+</button>
+<div class="px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm hidden faq-content">
+          Yes. Advocate Shubham Singh regularly appears via hybrid videoconferencing platforms before all Benches of the Delhi High Court, National Company Law Appellate Tribunal (NCLAT), and other State High Courts across India upon formal briefing by local instructing advocates.
+        </div>
+</div>
+</div>
+</section>
+<!-- Interactive Script for FAQ Micro-interactions -->
+<script>
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // Close all other FAQs in the group for clean accordion behavior
+        document.querySelectorAll('.faq-toggle').forEach(otherBtn => {
+          if (otherBtn !== btn) {
+            otherBtn.setAttribute('aria-expanded', 'false');
+            otherBtn.nextElementSibling.classList.add('hidden');
+            const otherIcon = otherBtn.querySelector('.faq-icon');
+            if (otherIcon) {
+              otherIcon.textContent = 'add';
+              otherIcon.classList.remove('rotate-45');
+            }
+          }
+        });
+
+        // Toggle clicked FAQ
+        if (isExpanded) {
+          btn.setAttribute('aria-expanded', 'false');
+          content.classList.add('hidden');
+          icon.textContent = 'add';
+          icon.classList.remove('rotate-45');
+        } else {
+          btn.setAttribute('aria-expanded', 'true');
+          content.classList.remove('hidden');
+          icon.textContent = 'close';
+          icon.classList.add('rotate-45');
+        }
+      });
+    });
+  </script>
+</div><footer class="mt-space-2xl px-margin-mobile pt-space-xl pb-space-lg bg-surface-container-low text-on-surface-variant"><div class="space-y-space-md"><details class="group"><summary class="flex justify-between items-center py-space-sm cursor-pointer list-none"><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Practice Areas</span><span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200">expand_more</span></summary><div class="py-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p>Constitutional Writs &amp; Appellate Advocacy</p><p>White-Collar Defense &amp; Special Statutes</p><p>Corporate Insolvency &amp; Commercial Disputes</p><p>Arbitration &amp; High Court Review Petitions</p></div></details><details class="group"><summary class="flex justify-between items-center py-space-sm cursor-pointer list-none"><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Primary Jurisdictions</span><span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200">expand_more</span></summary><div class="py-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p>Supreme Court of India (Tilak Marg, New Delhi)</p><p>High Court of Delhi (Sher Shah Road, New Delhi)</p><p>National Company Law Appellate Tribunal (NCLAT)</p><p>Special CBI &amp; Enforcement Directorate Courts</p></div></details><details class="group"><summary class="flex justify-between items-center py-space-sm cursor-pointer list-none"><span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Chamber Coordinates</span><span class="material-symbols-outlined text-tertiary group-open:rotate-180 transition-transform duration-200">expand_more</span></summary><div class="py-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="text-on-surface font-medium">Chamber Block Lawyers Complex, Supreme Court</p><p>Consultation Chambers: Golf Links &amp; Defence Colony, New Delhi</p><p>Registry Direct: +91 11 2338 0000</p><p>Registry Dispatch: briefs@shubhamsingh.law</p></div></details></div><div class="mt-space-xl pt-space-md text-center"><p class="font-eyebrow text-eyebrow uppercase text-tertiary tracking-[0.2em] mb-space-xs">Statutory Bar Council Notice</p><p class="font-legal-disclaimer text-legal-disclaimer text-outline leading-relaxed text-justify">This mobile interface is configured strictly to provide institutional case information and coordinates for enrolled clients and briefing solicitors. As per the rules of the Bar Council of India under Rule 36 of Chapter II, Part VI of the Bar Council of India Rules (Advocates Act, 1961), an advocate is strictly prohibited from soliciting work or advertising. Accessing this platform signifies explicit, unsolicited acknowledgment of professional representation requirements.</p></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-tertiary font-bold"><div class="px-gutter-mobile pt-space-xs pb-space-sm grid grid-cols-2 gap-space-sm"><a class="h-12 flex items-center justify-center gap-space-xs rounded-lg bg-surface-container text-tertiary hover:bg-surface-container-high transition-colors" data-path="call-chambers" href="tel:+911123380000"><span class="material-symbols-outlined text-[20px]">call</span><span class="font-label-md text-label-md uppercase tracking-wider">Call Chambers</span></a><a class="h-12 flex items-center justify-center gap-space-xs rounded-lg bg-secondary-container text-secondary-fixed hover:bg-on-secondary transition-colors" data-path="briefing-request" href="https://wa.me/919999999999"><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-label-md text-label-md uppercase tracking-wider">WhatsApp Briefing</span></a></div><div class="flex justify-around items-center h-12 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center w-12 h-11 transition-all text-tertiary font-bold" data-path="overview" href="#"><span class="material-symbols-outlined text-[19px]">gavel</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Practice</span></a><a class="flex flex-col items-center justify-center w-12 h-11 text-on-surface-variant hover:text-on-surface transition-all" data-path="case-docket" href="#"><span class="material-symbols-outlined text-[19px]">folder_special</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Dockets</span></a><a class="flex flex-col items-center justify-center w-12 h-11 text-on-surface-variant hover:text-on-surface transition-all" data-path="opinions" href="#"><span class="material-symbols-outlined text-[19px]">article</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Citations</span></a><a class="flex flex-col items-center justify-center w-12 h-11 text-on-surface-variant hover:text-on-surface transition-all" data-path="briefing-request" href="#"><span class="material-symbols-outlined text-[19px]">send</span><span class="text-[10px] tracking-wide uppercase font-label-md mt-0.5">Consult</span></a></div></nav></body></html>

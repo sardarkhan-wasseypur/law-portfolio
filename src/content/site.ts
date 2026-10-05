@@ -1,0 +1,20 @@
+export const siteConfig = {
+  name: "Law Office of Shubham Singh",
+  advocateName: "Shubham Singh",
+  titleSuffix: "Law Office of Shubham Singh, Advocate",
+  role: "Advocate",
+  phone: "+91 99905 90014",
+  phoneDigits: "+919990590014",
+  whatsapp: "+91 99905 90014",
+  whatsappDigits: "919990590014",
+  email: "Lawofficeofshubhamsingh@gmail.com",
+  address: "A-23, Sujan Singh Block, Middle Circle, Connaught Place, New Delhi - 110001",
+  landmark: "Near Wenger's / Indian Oil Petroleum, Block A",
+  city: "New Delhi",
+  postalCode: "110001",
+  country: "India",
+  hours: "Mon-Sat, 10:00-18:00",
+  siteUrl: "https://shubhamsingh.adv.in",
+  enrollment: "", // LATER
+  socialLinks: {},
+};

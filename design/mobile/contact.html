@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0e141c;color:#dee2ef;}body{overscroll-behavior:none;font-family:'Hanken Grotesk',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#343943", "secondary": "#ffb1c2", "on-tertiary": "#402d00", "on-secondary": "#620a2c", "surface-container-highest": "#30353f", "tertiary-container": "#1a1100", "error": "#ffb4ab", "on-tertiary-fixed": "#261a00", "on-primary": "#2a3040", "primary-fixed": "#dce2f6", "on-primary-fixed": "#151b2a", "secondary-fixed": "#ffd9df", "inverse-on-surface": "#2c313a", "on-surface-variant": "#c6c6cc", "error-container": "#93000a", "on-error": "#690005", "surface-dim": "#0e141c", "on-primary-container": "#777d8f", "on-tertiary-container": "#967a3c", "surface-container-high": "#252a34", "primary-fixed-dim": "#c0c6da", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#404757", "secondary-fixed-dim": "#ffb1c2", "on-background": "#dee2ef", "tertiary": "#e4c27d", "surface-container-low": "#171c25", "surface": "#0e141c", "tertiary-fixed-dim": "#e4c27d", "on-secondary-fixed": "#3f0018", "outline-variant": "#45474c", "background": "#0e141c", "primary": "#c0c6da", "on-secondary-fixed-variant": "#802442", "on-surface": "#dee2ef", "surface-variant": "#30353f", "on-tertiary-fixed-variant": "#5a4309", "inverse-surface": "#dee2ef", "surface-container": "#1b2029", "inverse-primary": "#585e6f", "surface-container-lowest": "#090e17", "surface-tint": "#c0c6da", "tertiary-fixed": "#ffdf9f", "outline": "#909096", "secondary-container": "#832644", "primary-container": "#0b1220", "on-secondary-container": "#ff9bb3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-2xl": "4rem", "space-3xl": "6rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "label-md": ["Hanken Grotesk"], "headline-xl-mobile": ["Bodoni Moda"], "legal-disclaimer": ["Hanken Grotesk"], "display-lg-mobile": ["Bodoni Moda"], "body-lg": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "eyebrow": ["Hanken Grotesk"], "headline-xl": ["Bodoni Moda"], "headline-md": ["Bodoni Moda"], "display-lg": ["Bodoni Moda"], "body-md": ["Hanken Grotesk"], "subheading-serif": ["Bodoni Moda"] }, "fontSize": { "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.01em", "fontWeight": "600" }], "legal-disclaimer": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "subheading-serif": ["20px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-primary-container/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Return to Chambers" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container text-tertiary hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><div class="flex flex-col"><span class="font-eyebrow text-eyebrow text-tertiary uppercase">CHAMBERS DOCKET</span><h1 class="font-subheading-serif text-subheading-serif text-on-surface leading-tight">Briefing Request</h1></div></div><div class="flex items-center gap-space-xs"><a aria-label="Direct Call" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container text-tertiary" href="tel:+911123380000"><span class="material-symbols-outlined text-[20px]">call</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida/AEtjO1UgYIcdXZaxZ9TZqaXEfPBGygt8wp_ZMHUuEUS83NxoAku_zeRe4hHpLdNF2tblC6usOevc3twSzZY2mfmTJltNvdUL1HSNdmGOEU-aKehXm8wZX98TezNZQ1plydKeoD9quIKdiNv_Bnnn-fAx0uol8lfh0OS_8ORLqn3WW-3ryn3Er6BzwlpdWywKUIWd4nIaXoRmlBFUEop1vHMa1YNkManhRIR7WoZ0fWEbtBemkcIqjittHBRrawQ"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Compact Breadcrumb Sub-strip -->
+<div class="px-margin-mobile py-2.5 bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-1.5 text-legal-disclaimer font-legal-disclaimer text-on-surface-variant">
+<span>Home</span>
+<span class="text-tertiary">/</span>
+<span class="text-tertiary uppercase tracking-wider font-semibold">Contact &amp; Chambers</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-2 py-0.5 rounded-full">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-legal-disclaimer text-legal-disclaimer text-tertiary font-semibold tracking-wider uppercase">Registry Open</span>
+</div>
+</div>
+<!-- Editorial Section Title Banner -->
+<section class="px-margin-mobile pt-space-lg pb-space-md flex flex-col relative overflow-hidden bg-gradient-to-b from-primary-container via-surface-container-lowest to-surface">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">balance</span>
+<span class="font-eyebrow text-eyebrow text-tertiary uppercase tracking-[0.2em]">Confidential Registry Intake</span>
+</div>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface leading-tight tracking-tight">
+      Chambers &amp; <br/><span class="italic font-normal text-tertiary">Confidential Consultation</span>
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+      Direct intake channel for High Court filings, urgent appellate briefing, and chamber consultations before the Supreme Court of India.
+    </p>
+<!-- Quick Tap Touch Action Band -->
+<div class="grid grid-cols-2 gap-2.5 mt-space-md">
+<a class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest transition-all shadow-md active:scale-[0.98]" href="tel:+911123388900">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[19px]">call</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant uppercase font-medium">Chambers Desk</span>
+<span class="font-label-md text-[12px] leading-tight text-on-surface font-semibold truncate">+91 11 2338-8900</span>
+</div>
+</a>
+<a class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest transition-all shadow-md active:scale-[0.98]" href="https://wa.me/919810088921" rel="noopener" target="_blank">
+<div class="w-9 h-9 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[19px]">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-legal-disclaimer text-legal-disclaimer text-on-secondary-container uppercase font-medium">Registry Line</span>
+<span class="font-label-md text-[12px] leading-tight text-on-surface font-semibold truncate">+91 98100 88921</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Editorial Visual Divider / Chamber Crest Accent -->
+<div class="relative w-full h-40 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Dark dramatic interior of an appellate legal chamber in New Delhi with rich mahogany bookshelves, brass scales of justice, leather-bound Supreme Court law reports, warm task lighting casting soft antique gold reflections" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADME545mDXu7Sl_gh26B9962pnV9fnD77nPKDzlnZK-QZDW1qTNMc3FVsAU5M2NcSszMcZSmayqdBzJJHA7VQVyqDoJeNm8DBsqzuhxVUyDklqb-Tr3H7nfwsezEhD3kPUlQ9p4udfXZqThGsNxjs0AeFN4sv9JTqzi4-DCiknBKRmV_zpARx68vfSfqps041SqF9tJBadufySucIUQeGMskB7OjPVapKw07jI3C_lZxpUWkt1R464')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-primary-container/80 flex items-end p-margin-mobile">
+<div class="flex items-center justify-between w-full">
+<div>
+<span class="font-legal-disclaimer text-legal-disclaimer text-tertiary uppercase tracking-widest block font-bold">New Delhi Chambers</span>
+<p class="font-subheading-serif text-[17px] text-on-surface font-medium leading-none mt-0.5">High Court &amp; Appellate Bar</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/80 text-on-surface font-legal-disclaimer text-legal-disclaimer backdrop-blur-md">Est. 2011</span>
+</div>
+</div>
+</div>
+<!-- Main Confidential Enquiry Form Container -->
+<section class="px-margin-mobile py-space-md flex flex-col">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-xl">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<h3 class="font-subheading-serif text-subheading-serif text-on-surface font-semibold">Priority Docket Intake</h3>
+</div>
+<span class="font-eyebrow text-[10px] text-on-surface-variant uppercase tracking-widest bg-surface-container-highest px-2 py-0.5 rounded">Form IV-B</span>
+</div>
+<form class="flex flex-col gap-space-md" id="confidentialForm" onsubmit="event.preventDefault(); handleDocketSubmit();">
+<!-- Field 1: Litigant / Corporate Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="litigantName">
+<span>1. Litigant / Corporate Entity</span>
+<span class="text-secondary font-body-sm">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">account_balance</span>
+<input class="w-full h-[50px] pl-11 pr-3 rounded-lg bg-surface-container-high text-on-surface font-body-md text-[16px] placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-highest transition-colors shadow-inner" id="litigantName" name="litigantName" placeholder="e.g. Anand Petrochem Pvt. Ltd. / Director" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: Phone Number (WhatsApp Enabled) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="litigantPhone">
+<span>2. Secure Phone (WhatsApp Enabled)</span>
+<span class="text-secondary font-body-sm">*</span>
+</label>
+<div class="flex items-center rounded-lg bg-surface-container-high overflow-hidden shadow-inner focus-within:bg-surface-container-highest transition-colors">
+<span class="h-[50px] px-3.5 flex items-center justify-center font-label-md text-label-md text-tertiary bg-surface-container font-semibold select-none">
+              🇮🇳 +91
+            </span>
+<input class="w-full h-[50px] px-3 bg-transparent text-on-surface font-body-md text-[16px] placeholder:text-on-surface-variant/50 focus:outline-none" id="litigantPhone" name="litigantPhone" pattern="[0-9]{10}" placeholder="98100 XXXXX" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Forum / Matter Nature Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="matterNature">
+<span>3. Preferred Forum &amp; Nature of Dispute</span>
+<span class="text-secondary font-body-sm">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">gavel</span>
+<select class="w-full h-[50px] pl-11 pr-10 rounded-lg bg-surface-container-high text-on-surface font-body-md text-[16px] appearance-none focus:outline-none focus:bg-surface-container-highest transition-colors shadow-inner" id="matterNature" name="matterNature" required="">
+<option class="bg-surface-container-high text-on-surface-variant" disabled="" selected="" value="">Select Judicial Forum...</option>
+<option class="bg-surface-container-high text-on-surface" value="supreme_court_slp">Supreme Court of India — SLP (Civil/Crl)</option>
+<option class="bg-surface-container-high text-on-surface" value="delhi_hc_commercial">Delhi High Court — Commercial Division Suit</option>
+<option class="bg-surface-container-high text-on-surface" value="crl_bail_quash">Delhi High Court — Bail / Sec 482 Quashing</option>
+<option class="bg-surface-container-high text-on-surface" value="sec_138_ni">Sec 138 Negotiable Instruments Act Appeal</option>
+<option class="bg-surface-container-high text-on-surface" value="arbitration_petition">Sec 9 / 11 / 34 Arbitration &amp; Conciliation</option>
+<option class="bg-surface-container-high text-on-surface" value="company_nclat">NCLT / NCLAT Insolvency Appeal</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-tertiary text-[20px] pointer-events-none">unfold_more</span>
+</div>
+</div>
+<!-- Field 4: Dispute Brief Summary -->
+<div class="flex flex-col gap-1.5">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="disputeSummary">
+<span>4. Procedural Status &amp; Core Facts</span>
+<span class="text-secondary font-body-sm">*</span>
+</label>
+<textarea class="w-full min-h-[110px] p-3.5 rounded-lg bg-surface-container-high text-on-surface font-body-md text-[16px] placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-highest transition-colors shadow-inner resize-none leading-relaxed" id="disputeSummary" name="disputeSummary" placeholder="Specify impugned order date, current court/bench, imminent limitation deadlines, and interim relief sought..." required="" rows="4"></textarea>
+</div>
+<!-- Field 5: Rule 36 Statutory Declaration Checkbox -->
+<div class="p-3 rounded-lg bg-surface-container flex items-start gap-3 mt-1">
+<div class="pt-0.5">
+<input class="w-5 h-5 rounded cursor-pointer accent-secondary focus:ring-0" id="bciRule36" name="bciRule36" required="" type="checkbox"/>
+</div>
+<label class="font-legal-disclaimer text-legal-disclaimer text-on-surface leading-snug cursor-pointer select-none" for="bciRule36">
+<span class="font-semibold text-tertiary">BCI Rule 36 Declaration:</span> I voluntarily submit this consultation inquiry and acknowledge that Advocate Shubham Singh does not solicit work or advertise under the Advocates Act, 1961.
+          </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-[52px] mt-1 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-on-secondary hover:text-secondary-fixed transition-all font-label-md text-label-md tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg active:scale-[0.99]" id="submitDocketBtn" type="submit">
+<span>Transmit Confidential Brief</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Legal Evidence Act Privilege Trust Note -->
+<div class="flex items-center justify-center gap-2 pt-1 text-center">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">lock</span>
+<p class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant">
+            Protected by Advocate-Client privilege under Section 126 of the Indian Evidence Act. 100% confidential.
+          </p>
+</div>
+</form>
+<!-- Dynamic Intake Success State (Hidden by default) -->
+<div class="hidden flex-col items-center text-center py-6 px-3 bg-surface-container-high rounded-lg mt-3" id="submitSuccessCard">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[28px]">mark_email_read</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-tertiary uppercase tracking-widest">Docket Recorded</span>
+<h4 class="font-subheading-serif text-subheading-serif text-on-surface mt-1">Brief Transmitted to Registry</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-xs leading-relaxed">
+          Docket Reference <strong class="text-on-surface font-mono">DEL/SC/2025-0891</strong>. The Legal Associate on duty will review limitation dates and revert within 4 business hours.
+        </p>
+</div>
+</div>
+</section>
+<!-- Chambers Physical Coordinates Matrix -->
+<section class="px-margin-mobile py-space-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow text-tertiary uppercase tracking-wider">Chamber Coordinates</span>
+<span class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant">Physical Registries</span>
+</div>
+<!-- Primary Delhi High Court Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden">
+<div class="flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-eyebrow text-[10px] text-tertiary uppercase tracking-widest">Primary Appellate Chambers</span>
+<h4 class="font-subheading-serif text-[18px] text-on-surface font-semibold mt-0.5">Delhi High Court Complex</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+            Chamber No. 412, Lawyers Chambers Block II,<br/>
+            Delhi High Court, Sher Shah Road,<br/>
+            New Delhi — 110503
+          </p>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between text-on-surface-variant font-legal-disclaimer text-legal-disclaimer">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[15px]">schedule</span>
+          Mon – Fri: 09:30 AM – 06:30 PM
+        </span>
+<span class="bg-surface-container-highest px-2 py-0.5 rounded text-tertiary">Court Sitting</span>
+</div>
+</div>
+<!-- Evening Chambers Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-eyebrow text-[10px] text-secondary uppercase tracking-widest">Consultation &amp; Conference</span>
+<h4 class="font-subheading-serif text-[18px] text-on-surface font-semibold mt-0.5">Defence Colony Chambers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+            Chamber C-Block, Private Enclave,<br/>
+            Defence Colony, Near Ring Road,<br/>
+            New Delhi — 110024
+          </p>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between text-on-surface-variant font-legal-disclaimer text-legal-disclaimer">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[15px]">dark_mode</span>
+          Evening: 07:00 PM – 09:30 PM
+        </span>
+<span class="bg-secondary-container/40 text-secondary-fixed px-2 py-0.5 rounded">Prior Appointment</span>
+</div>
+</div>
+</section>
+<!-- Transit, Metro & Judicial Access Details -->
+<section class="px-margin-mobile py-space-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow text-tertiary uppercase tracking-wider">Arrival &amp; Ingress</span>
+<span class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant">Sher Shah Road Entry</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- Metro Station 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-high flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-tertiary text-[20px] mb-1">train</span>
+<span class="font-legal-disclaimer text-[11px] font-semibold text-on-surface leading-tight">Supreme Court</span>
+<span class="font-legal-disclaimer text-[10px] text-on-surface-variant mt-0.5">Blue Line (1.2 km)</span>
+</div>
+<!-- Metro Station 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-high flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-tertiary text-[20px] mb-1">directions_subway</span>
+<span class="font-legal-disclaimer text-[11px] font-semibold text-on-surface leading-tight">Khan Market</span>
+<span class="font-legal-disclaimer text-[10px] text-on-surface-variant mt-0.5">Violet Line (1.4 km)</span>
+</div>
+<!-- Parking Node -->
+<div class="p-2.5 rounded-lg bg-surface-container-high flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary text-[20px] mb-1">local_parking</span>
+<span class="font-legal-disclaimer text-[11px] font-semibold text-on-surface leading-tight">Gate 2 MLCP</span>
+<span class="font-legal-disclaimer text-[10px] text-on-surface-variant mt-0.5">Automated Parking</span>
+</div>
+</div>
+<!-- Security & Entry Guidance -->
+<div class="p-3 rounded-lg bg-surface-container flex items-start gap-2.5 mt-1">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">info</span>
+<p class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant leading-relaxed">
+        Litigant entry into Lawyers Chambers Block II requires Bar Council or Supreme Court photo gate pass. Please carry Govt. ID (Aadhaar / Voter Card / Passport) for registry biometric counter.
+      </p>
+</div>
+</section>
+<!-- Interactive Map Pin & Nav Card -->
+<section class="px-margin-mobile py-space-sm flex flex-col">
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-xl flex flex-col">
+<!-- Map Visual Node -->
+<div class="w-full h-44 bg-cover bg-center relative flex items-center justify-center" data-location="Delhi High Court, Sher Shah Road, New Delhi, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfH2NGoHIHcWutRBjIyeSevMPXIzLKVfPcqQeyrOt5lNJtGrCX_fjU8IlUBILM1_rQNS_cWgpumn_Ev-TWuygOm7V6ENatfmFsJJisEEkp8wYIGUbk_pX3boCpl87sJknqByoKEtx16TvdlGjM7AeJEa9hUpptkRE7LSZvNRsiHkz_dNJq6dDU6-xt4legJIe3XgwDaGTpSGPSj9OjD6OP82aOf3pnV8BGL2kpgSpynonW_FrlNwXb')">
+<div class="absolute inset-0 bg-primary-container/40"></div>
+<div class="relative z-10 flex flex-col items-center bg-surface-container-lowest/90 px-3.5 py-2 rounded-xl shadow-lg backdrop-blur-md">
+<span class="material-symbols-outlined text-secondary text-[26px]">pin_drop</span>
+<span class="font-label-md text-[12px] font-semibold text-on-surface mt-0.5">Delhi High Court Block II</span>
+<span class="font-legal-disclaimer text-[10px] text-tertiary">Chamber 412 GPS Target</span>
+</div>
+</div>
+<!-- Action Strip -->
+<div class="p-3.5 flex items-center justify-between bg-surface-container-high">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sher Shah Road, India Gate Ring</span>
+<span class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant">Central Delhi Judicial District</span>
+</div>
+<a class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-lowest text-tertiary hover:bg-surface-container font-label-md text-[12px] font-semibold shadow active:scale-95 transition-all" href="https://maps.google.com/?q=Delhi+High+Court+New+Delhi" rel="noopener" target="_blank">
+<span>Open Maps</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Collapsible Judicial FAQs Accordion -->
+<section class="px-margin-mobile py-space-sm flex flex-col gap-2">
+<span class="font-eyebrow text-eyebrow text-tertiary uppercase tracking-wider">Chamber Protocols &amp; Briefing</span>
+<!-- Accordion Item 1 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-3.5 text-left flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors" onclick="toggleChamberAccordion('faq1')" type="button">
+<span class="font-label-md text-[13px] font-semibold pr-2">What documents are essential for an urgent SLP review?</span>
+<span class="material-symbols-outlined text-tertiary text-[20px] transition-transform duration-200" id="icon-faq1">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm leading-relaxed bg-surface-container-low" id="content-faq1">
+        Certified copy of the impugned High Court judgment/order, trial court record (if relevant), date of judgment (to compute 90-day limitation period under Supreme Court Rules), and vakalatnama authorization.
+      </div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-3.5 text-left flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors" onclick="toggleChamberAccordion('faq2')" type="button">
+<span class="font-label-md text-[13px] font-semibold pr-2">Can outstation litigants conduct video consultations?</span>
+<span class="material-symbols-outlined text-tertiary text-[20px] transition-transform duration-200" id="icon-faq2">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm leading-relaxed bg-surface-container-low" id="content-faq2">
+        Yes. Secure virtual chamber briefings via encrypted video links are arranged for commercial clients and appellate litigants outside the National Capital Region (NCR) after registry screening.
+      </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-3.5 text-left flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors" onclick="toggleChamberAccordion('faq3')" type="button">
+<span class="font-label-md text-[13px] font-semibold pr-2">How are urgent interim stay matters handled?</span>
+<span class="material-symbols-outlined text-tertiary text-[20px] transition-transform duration-200" id="icon-faq3">expand_more</span>
+</button>
+<div class="hidden px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm leading-relaxed bg-surface-container-low" id="content-faq3">
+        For immediate demolition, arrest, or commercial injunction threats, urgent mention memos are drafted within 24 hours for special listing before the Hon’ble Chief Justice’s Bench.
+      </div>
+</div>
+</section>
+<!-- Statutory Bar Council Notice Footer Matrix -->
+<footer class="mt-space-md pt-space-md pb-24 px-margin-mobile bg-surface-container-lowest flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-eyebrow text-eyebrow text-on-surface uppercase tracking-wider">Statutory Bar Compliance</span>
+</div>
+<p class="font-legal-disclaimer text-legal-disclaimer text-on-surface-variant leading-relaxed">
+      This intake gateway is maintained solely to facilitate communication between existing or prospective clients and the office of Advocate Shubham Singh (Enrolment No: D/1842/2011). Under Rule 36 of Chapter II of Part VI of the Bar Council of India Rules, advocates are prohibited from soliciting work. No material contained herein constitutes legal advertisement or solicitation.
+    </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-legal-disclaimer text-legal-disclaimer">
+<span>Chambers of Shubham Singh © 2025</span>
+<span class="text-tertiary font-mono">DHC-BAR #412</span>
+</div>
+</footer>
+<!-- Mobile Sticky Thumb-Friendly Bottom Bar -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-primary-container/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)] px-margin-mobile py-2.5 pb-safe flex items-center gap-3">
+<!-- Call Chambers Button -->
+<a class="flex-1 h-12 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest flex items-center justify-center gap-2 font-label-md text-label-md font-semibold transition-all active:scale-[0.98] shadow-md" href="tel:+911123388900">
+<span class="material-symbols-outlined text-tertiary text-[20px]">call</span>
+<span>Call Chambers</span>
+</a>
+<!-- WhatsApp Registry Button -->
+<a class="flex-1 h-12 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-on-secondary hover:text-secondary-fixed flex items-center justify-center gap-2 font-label-md text-label-md font-bold tracking-wider uppercase transition-all active:scale-[0.98] shadow-md" href="https://wa.me/919810088921" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-on-secondary-container text-[20px]">chat</span>
+<span>WhatsApp</span>
+</a>
+</div>
+</div>
+<script>
+  function handleDocketSubmit() {
+    const form = document.getElementById('confidentialForm');
+    const successCard = document.getElementById('submitSuccessCard');
+    const btn = document.getElementById('submitDocketBtn');
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = `<span class="inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span> Encrypting Intake...`;
+
+    setTimeout(() => {
+      form.classList.add('hidden');
+      successCard.classList.remove('hidden');
+      successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 700);
+  }
+
+  function toggleChamberAccordion(id) {
+    const content = document.getElementById('content-' + id);
+    const icon = document.getElementById('icon-' + id);
+
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+</script></main></body></html>
